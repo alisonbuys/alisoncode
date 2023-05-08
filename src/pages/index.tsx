@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                 </h3>
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
                   <p>South Africa ,Western Cape</p>
-                  <p>Mossel Bay</p>
+                  <p>Mossel Bay7</p>
                 </address>
               </div>
               
