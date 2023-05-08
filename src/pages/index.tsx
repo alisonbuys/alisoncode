@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { api } from "~/utils/api";
-import { IcHiOutlinePhoneonName } from "react-icons/hi";
+
 
 
 const Home: NextPage = () => {
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
                 Contact me
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                You can contact me on any of the platforms below:
+                You can contact me on any of the following platforms below:
               </p>
             </div>
             <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
