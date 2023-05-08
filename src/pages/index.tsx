@@ -101,10 +101,13 @@ const Home: NextPage = () => {
                   <p>Mossel Bay</p>
                 </address>
               </div>
-              
+             
             </div>
           </div>
         </div>
+
+<Link href={"message.tsx"} className="text-blue-300">message</Link>
+        
       </main>
     </>
   );
