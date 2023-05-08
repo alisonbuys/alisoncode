@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { api } from "~/utils/api";
+import { IcHiOutlinePhoneonName } from "react-icons/hi";
 
 
 const Home: NextPage = () => {
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
         </div>
         <div className="p-5"></div>
         
-        <div className="rounded-2xl bg-slate-100 shadow-4xl p-10">
+        <div className="rounded-2xl bg-slate-100 shadow-4xl p-20">
         <Image
             height={200}
             width={200}
@@ -61,7 +62,7 @@ const Home: NextPage = () => {
               <div>
                 <h3 className="border-l border-indigo-600 pl-6 font-semibold text-gray-900">
                   Cell
-                  
+                  {/* <IcHiOutlinePhoneonName className=" w-5 h-5"/> */}
                 </h3>
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
                   <p>062 340 2856</p>
