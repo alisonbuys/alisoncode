@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             src={"/assets/images/photo.jpg"}
             className="h-10 w-10 rounded-full "
             alt={"people"}
-          /><div className=" flex-auto mt-2 text-base font-bold">MY PROFILE
+          /><div className=" flex-auto mt-2 text-base font-serif">MY PROFILE
             
           </div>
         </div>
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
             className="h-800 w-800 rounded-full border border-white"
             alt={"people"}
           />
-          <div className=" pt-6 text-4xl font-bold">Alison Buys...</div>
+          <div className=" pt-6 text-4xl font-serif">Alison Buys...</div>
 
           <div>
             Outgoing and ambitious high school graduate. Eager to use my
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              <h2 className="text-3xl font-serif tracking-tight text-gray-900">
                 Contact me
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
