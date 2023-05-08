@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         </div>
         <div className="p-5"></div>
         
-        <div className="rounded-2xl bg-slate-100 shadow-inner p-20">
+        <div className="rounded-2xl bg-slate-100 shadow-inner p-10">
         <Image
             height={200}
             width={200}
