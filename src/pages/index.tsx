@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="p-7">
-        <div className="flex p-4 h-20 bg-red-700">
+        <div className="flex p-4 h-20 bg-red-600">
           <Image
             height={100}
             width={100}
