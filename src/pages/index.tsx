@@ -62,7 +62,7 @@ const Home: NextPage = () => {
               <div>
                 <h3 className="border-l border-indigo-600 pl-6 font-semibold text-gray-900">
                   Cell
-                  {/* <IcHiOutlinePhoneonName className=" w-5 h-5"/> */}
+                
                 </h3>
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
                   <p>062 340 2856</p>
