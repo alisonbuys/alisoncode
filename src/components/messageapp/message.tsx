@@ -59,8 +59,8 @@ export function MessageApp() {
           <div className="flex flex-row gap-2 bg-green-700 p-2 ">
             <ArrowLeftIcon className="h-8 w-8 text-white" />
 
-            <div className="h-8 w-8 overflow-hidden rounded-full">
-              <Image src="/avatar.png" width={100} height={100} alt="avatar" />
+            <div className="h-10 w-10 overflow-hidden rounded-full">
+              <Image src="/people.png" width={100} height={100} alt="people" />
             </div>
 
             <div className="flex-1">
