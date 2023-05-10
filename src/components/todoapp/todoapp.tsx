@@ -1,6 +1,5 @@
 // import React,{FormEvent,FunctionCompont as FC} from "react";
 import { useState } from "react";
-import { number } from "zod";
 import {
   CheckIcon,
   ChevronDownIcon,
@@ -56,6 +55,7 @@ export function TodoApp() {
         .map((onetodoitem) => {
           return (
             <div
+              key={onetodoitem.id}
               className={
                 onetodoitem.isDone === true
                   ? "flex bg-rose-200 p-2 text-gray-500"
@@ -67,7 +67,7 @@ export function TodoApp() {
               </span>
               <button
                 onClick={() => {
-                  let todolist = todo.map((i) => {
+                  const todolist = todo.map((i) => {
                     if (i.id === onetodoitem.id) {
                       i.order = i.order - 1;
                     }
@@ -84,7 +84,7 @@ export function TodoApp() {
               </button>
               <button
                 onClick={() => {
-                  let todolist = todo.map((i) => {
+                  const todolist = todo.map((i) => {
                     if (i.id === onetodoitem.id) {
                       i.order = i.order + 1;
                     }
@@ -101,7 +101,7 @@ export function TodoApp() {
               </button>
               <button
                 onClick={() => {
-                  let todolist = todo.map((i) => {
+                  const todolist = todo.map((i) => {
                     if (i.id === onetodoitem.id) {
                       i.isDone = true;
                     }
@@ -119,7 +119,7 @@ export function TodoApp() {
 
               <button
                 onClick={() => {
-                  let todolist = todo.filter((i) => {
+                  const todolist = todo.filter((i) => {
                     if (i.id === onetodoitem.id) {
                       return false;
                     }
