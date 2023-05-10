@@ -58,7 +58,7 @@ export function TodoApp() {
             <div
               className={
                 onetodoitem.isDone === true
-                  ? "flex bg-rose-200 p-2 text-gray-500"
+                  ? "flex bg-rose-200 p-2 text-gray-900"
                   : "flex bg-rose-200 p-2 font-semibold"
               }
             >
