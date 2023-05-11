@@ -1,13 +1,14 @@
 // import React,{FormEvent,FunctionCompont as FC} from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   CheckIcon,
   ChevronDownIcon,
   ChevronUpIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
+import { useTodoState } from "./todostate";
 
-type TodoItem = {
+export type TodoItem = {
   id: string;
   time: Date;
   title: string;
@@ -16,9 +17,17 @@ type TodoItem = {
 };
 
 export function TodoApp() {
-  const [todo, todo_set] = useState<TodoItem[]>([]);
-
+  const todostate = useTodoState();
+  // const [todo, todo_set] = useState<TodoItem[]>([]);
   const [newtodo, newtodo_set] = useState("");
+
+  const [loaded, loaded_set] = useState(false);
+
+  useEffect(() => {
+    if (!loaded) loaded_set(true);
+  }, []);
+
+  if (!loaded) return <div>loading...</div>;
 
   return (
     <div className="rounded-xl bg-rose-200 p-8 shadow-2xl">
@@ -40,17 +49,19 @@ export function TodoApp() {
               title: newtodo,
               isDone: false,
               time: new Date(),
-              order: todo.length + 1,
+              order: todostate.todolist.length + 1,
             };
 
-            todo_set([...todo, newtodoitem]);
+            const todolist = [...todostate.todolist, newtodoitem];
+
+            todostate.set({ todolist });
           }}
           className="rounded-r-xl bg-rose-400 p-4 px-2 text-white transition hover:bg-rose-500"
         >
           Add task
         </button>
       </div>
-      {todo
+      {todostate.todolist
         .sort((a, b) => a.order - b.order)
         .map((onetodoitem) => {
           return (
@@ -67,7 +78,7 @@ export function TodoApp() {
               </span>
               <button
                 onClick={() => {
-                  const todolist = todo.map((i) => {
+                  const todolist = todostate.todolist.map((i) => {
                     if (i.id === onetodoitem.id) {
                       i.order = i.order - 1;
                     }
@@ -75,7 +86,7 @@ export function TodoApp() {
                     return i;
                   });
 
-                  todo_set(todolist);
+                  todostate.set({ todolist: todolist });
                 }}
                 className="rounded-md border bg-rose-400 p-2 text-white transition hover:bg-rose-500"
               >
@@ -84,7 +95,7 @@ export function TodoApp() {
               </button>
               <button
                 onClick={() => {
-                  const todolist = todo.map((i) => {
+                  const todolist = todostate.todolist.map((i) => {
                     if (i.id === onetodoitem.id) {
                       i.order = i.order + 1;
                     }
@@ -92,7 +103,7 @@ export function TodoApp() {
                     return i;
                   });
 
-                  todo_set(todolist);
+                  todostate.set({ todolist: todolist });
                 }}
                 className="rounded-md border bg-rose-400 p-2 text-white transition hover:bg-rose-500"
               >
@@ -101,7 +112,7 @@ export function TodoApp() {
               </button>
               <button
                 onClick={() => {
-                  const todolist = todo.map((i) => {
+                  const todolist = todostate.todolist.map((i) => {
                     if (i.id === onetodoitem.id) {
                       i.isDone = true;
                     }
@@ -109,7 +120,7 @@ export function TodoApp() {
                     return i;
                   });
 
-                  todo_set(todolist);
+                  todostate.set({ todolist: todolist });
                 }}
                 className="rounded-md border bg-rose-400 p-2 text-white transition hover:bg-rose-500"
               >
@@ -119,7 +130,7 @@ export function TodoApp() {
 
               <button
                 onClick={() => {
-                  const todolist = todo.filter((i) => {
+                  const todolist = todostate.todolist.filter((i) => {
                     if (i.id === onetodoitem.id) {
                       return false;
                     }
@@ -127,7 +138,7 @@ export function TodoApp() {
                     return true;
                   });
 
-                  todo_set(todolist);
+                  todostate.set({ todolist: todolist });
                 }}
                 className="rounded-md border bg-rose-400 p-2 text-white transition hover:bg-rose-500"
               >
