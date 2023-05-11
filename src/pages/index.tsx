@@ -115,7 +115,7 @@ const Home: NextPage = () => {
           <h1 className="pb-5 text-3xl font-bold tracking-tight text-gray-900">
             Projects
           </h1>
-          <div className="grid grid-cols-2 grid-rows-4 gap-4">
+          <div className=" span row-span-full m-1">
             <ProjectThumbnailLinks
               link={"/projects/messageapp"}
               name={"Message App"}
@@ -153,8 +153,8 @@ function ProjectThumbnailLinks(props: {
 }) {
   return (
     <Link href={props.link} className="">
-      <div className="h-full rounded-lg bg-gray-300 p-4 transition hover:bg-red-300">
-        <h3 className="text-red-700">{props.name}</h3>
+      <div className="h-full rounded-lg bg-gray-300 p-4 pb-4 transition hover:bg-red-300">
+        <h3 className="font-semibold text-red-700">{props.name}</h3>
 
         <p>{props.description}</p>
       </div>
