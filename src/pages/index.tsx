@@ -115,7 +115,7 @@ const Home: NextPage = () => {
           <h1 className="pb-5 text-3xl font-bold tracking-tight text-black">
             Projects
           </h1>
-          <div className=" span row-span-full m-1">
+          <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1">
             <ProjectThumbnailLinks
               link={"/projects/messageapp"}
               name={"Message App"}
