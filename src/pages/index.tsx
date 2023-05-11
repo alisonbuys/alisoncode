@@ -111,11 +111,13 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+
         <div className="container mx-auto rounded-2xl bg-gray-100 p-4">
           <h1 className="pb-5 text-3xl font-bold tracking-tight text-black">
             Projects
           </h1>
-          <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1">
+          {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
+          <div className="flex flex-col gap-4 sm:flex-row ">
             <ProjectThumbnailLinks
               link={"/projects/messageapp"}
               name={"Message App"}
