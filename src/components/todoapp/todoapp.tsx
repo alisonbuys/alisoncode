@@ -45,7 +45,7 @@ export function TodoApp() {
 
             todo_set([...todo, newtodoitem]);
           }}
-          className="rounded-r-xl bg-rose-400 p-4 px-3 text-white transition hover:bg-rose-500"
+          className="rounded-r-xl bg-rose-400 p-4 px-2 text-white transition hover:bg-rose-500"
         >
           Add task
         </button>
