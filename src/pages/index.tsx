@@ -130,12 +130,12 @@ const Home: NextPage = () => {
               description={"A simple todo clone built with react."}
             />
 
-            {/* <ProjectThumbnailLinks
+            <ProjectThumbnailLinks
               link={"/projects/messageapp"}
               name={"Message App"}
-              description={"A simple whatsapp clone built with react."}
+              description={"A simple 3D clone built with react."}
             />
-
+            {/*
             <ProjectThumbnailLinks
               link={"/projects/messageapp"}
               name={"Message App"}
