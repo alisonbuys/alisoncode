@@ -30,13 +30,13 @@ export function TodoApp() {
   if (!loaded) return <div>loading...</div>;
 
   return (
-    <div className="rounded-xl bg-rose-200 p-8 shadow-2xl">
+    <div className="flex flex-shrink rounded-xl  bg-rose-200 p-8 shadow-2xl">
       <div className="p-2 text-lg font-normal text-white"> TODO LIST</div>
       <div>
         <input
           type="text"
           placeholder="Add Todo..."
-          className="mb-5 border p-4"
+          className="mb-5 flex-auto border p-4"
           value={newtodo}
           onChange={(e) => {
             newtodo_set(e.target.value);
@@ -56,7 +56,7 @@ export function TodoApp() {
 
             todostate.set({ todolist });
           }}
-          className="rounded-r-xl bg-rose-400 p-4 px-2 text-white transition hover:bg-rose-500"
+          className=" flex-auto rounded-r-xl bg-rose-400 p-4 px-2 text-white transition hover:bg-rose-500"
         >
           Add task
         </button>
