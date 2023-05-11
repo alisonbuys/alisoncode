@@ -112,7 +112,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="container mx-auto rounded-2xl bg-gray-100 p-4">
-          <h1 className="pb-5 text-3xl font-bold tracking-tight text-gray-900">
+          <h1 className="pb-5 text-3xl font-bold tracking-tight text-black">
             Projects
           </h1>
           <div className=" span row-span-full m-1">
