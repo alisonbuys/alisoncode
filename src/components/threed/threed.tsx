@@ -1,35 +1,22 @@
-import { useRef,useEffect} from "react";
-import { Canvas, useFrame, } from "@react-three/fiber";
+import { useRef, useEffect } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import {
   useGLTF,
   MeshTransmissionMaterial,
   ContactShadows,
   Environment,
+  OrbitControls,
+  Html,
 } from "@react-three/drei";
 import { easing } from "maath";
 import { useStore } from "./store";
 import { Vector3 } from "three";
-
-export function myRef ( ) {
-  
-  const myRef = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    const node = myRef.current
-    node?.classList.add('something')
-    // ^ note the new ? similar to `if (node)`
-  })
-  return (
-    <div ref={myRef}></div>
-  )
-}
+import { applyProps } from "@react-three/fiber/dist/declarations/src/core/utils";
 
 export default function App() {
   return (
-    <Canvas {props}
-      eventSource={document.getElementById("root")}
-      eventPrefix="client"
-      camera={{ position: [0, 0, 4], fov: 40 }}
-    >
+    <Canvas camera={{ position: [0, 0, 4], fov: 40 }}>
+      <OrbitControls />
       <ambientLight intensity={0.7} />
       <spotLight
         intensity={0.5}
@@ -47,61 +34,13 @@ export default function App() {
         blur={2}
         far={0.8}
       />
-      <Selector>
-        <Shoe rotation={[0.3, Math.PI / 1.6, 0]} />
-      </Selector>
-    </Canvas>
-  );
-}
 
-function Selector({children}) {
-  const store = useStore();
-  const myRef: { current: {
-    material: any; position: Vector3; scale: Vector3; 
-}; };const current = useRef()
-  useFrame(({ viewport, camera, pointer }, delta) => {
-    const { width, height } = viewport.getCurrentViewport(camera, [0, 0, 3]);
-    easing.damp3(
-      myRef.current.position,
-      [(pointer.x * width) / 2, (pointer.y * height) / 2, 3],
-      store.open ? 0 : 0.1,
-      delta
-    );
-    easing.damp3(
-      myRef.current.scale,
-      store.open ? 4 : 0.01,
-      store.open ? 0.5 : 0.2,
-      delta
-    );
-    easing.dampC(
-      myRef.current.material.color,
-      store.open ? "#f0f0f0" : "#ccc",
-      0.1,
-      delta
-      
-    );
-  });
-  return (
-    <>
-      <mesh ref={}>
-        <circleGeometry args={[1, 64, 64]} />
-        <MeshTransmissionMaterial
-          samples={16}
-          resolution={512}
-          anisotropy={1}
-          thickness={0.1}
-          roughness={0.4}
-          toneMapped={true} distortionScale={0} temporalDistortion={0}        />
-      </mesh>
-      <group
-        onPointerOver={() => (store.open = true)}
-        onPointerOut={() => (store.open = false)}
-        onPointerDown={() => (store.open = true)}
-        onPointerUp={() => (store.open = false)}
-      >
-        {children}
-      </group>
-    </>
+      <Shoe rotation={[0.3, Math.PI / 1.6, 0]} />
+      <Html transform position={[-0.4, 0.85, 0]} scale={0.5}>
+        <h1>Nike Shoe</h1>
+        <h1 className="font-bold text-red-700">R 599</h1>
+      </Html>
+    </Canvas>
   );
 }
 
@@ -114,25 +53,15 @@ Source: https://sketchfab.com/3d-models/nike-air-zoom-pegasus-36-00fd99e778c244c
 Title: Nike Air Zoom Pegasus 36
 */
 
-function Shoe(props:any) {
-  const myRef: { current: {
-    rotation: any;
-    material: any; position: Vector3; scale: Vector3; 
-}; };const current = useRef()
-  const { nodes, materials } = useGLTF.preload(
+function Shoe(props: any) {
+  const { nodes, materials } = useGLTF(
     "/nike_air_zoom_pegasus_36-transformed.glb"
-  );
-  useFrame((state) => {
-    const t = state.clock.getElapsedTime();
-    myRef.current.rotation.set(
-      Math.cos(t / 4) / 8,
-      Math.sin(t / 3) / 4,
-      0.15 + Math.sin(t / 2) / 8
-    );
-    myRef.current.position.y = (0.5 + Math.cos(t / 2)) / 7;
-  });
+  ) as unknown as any;
+
+  if (!nodes) return null;
+
   return (
-    <group ref={}>
+    <group>
       <mesh
         receiveShadow
         castShadow

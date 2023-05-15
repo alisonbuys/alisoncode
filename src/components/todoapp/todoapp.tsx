@@ -25,7 +25,7 @@ export function TodoApp() {
 
   useEffect(() => {
     if (!loaded) loaded_set(true);
-  }, []);
+  }, [loaded]);
 
   if (!loaded) return <div>loading...</div>;
 
