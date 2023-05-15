@@ -131,8 +131,8 @@ const Home: NextPage = () => {
             />
 
             <ProjectThumbnailLinks
-              link={"/projects/messageapp"}
-              name={"Message App"}
+              link={"/projects/threed"}
+              name={"React App"}
               description={"A simple 3D clone built with react."}
             />
             {/*
