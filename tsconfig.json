@@ -28,6 +28,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs"
-  ],
+, "src/pages/projects/store.ts"  ],
   "exclude": ["node_modules"]
 }
