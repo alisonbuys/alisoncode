@@ -38,7 +38,7 @@ export default function App() {
       <Shoe rotation={[0.3, Math.PI / 1.6, 0]} />
       <Html transform position={[-0.4, 0.85, 0]} scale={0.5}>
         <h1>Nike Shoe</h1>
-        <h1 className="font-bold text-red-700">R 599</h1>
+        <h1 className="font-bold text-red-700">R 899</h1>
       </Html>
     </Canvas>
   );
