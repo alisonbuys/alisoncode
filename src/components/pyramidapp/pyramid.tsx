@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function PyramidApp(rows: number) {
-  const [rowNumber, set_rows] = useState("");
+export default function PyramidApp() {
+  const [rows, set_rows] = useState("");
 
   let singleNumber = 1;
 
@@ -19,16 +19,16 @@ export default function PyramidApp(rows: number) {
   }
 
   return (
-    <div className="m-10 flex gap-7 bg-pink-300 p-10 font-bold text-white">
+    <div className="m-2 bg-pink-300 p-10 font-serif text-white">
       Pyramid test
       <input
         type="number"
-        className="border-black p-4"
+        className="border-black p-4 text-black"
         onChange={(e) => {
           set_rows(e.target.value);
         }}
+        value={rows}
       />
-      value={rowNumber}
     </div>
   );
 }
