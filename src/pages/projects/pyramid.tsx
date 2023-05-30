@@ -1,9 +1,9 @@
 // export { MessageApp } from "~/components/message";
 
 import Link from "next/link";
-import { PyramidApp } from "~/components/messageapp/message";
+import PyramidApp from "~/components/pyramidapp/pyramid";
 
-export default function MessageAppPage() {
+export default function PyramidAppPage() {
   return (
     <div>
       <Link href="/">Home</Link>
