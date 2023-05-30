@@ -5,7 +5,7 @@ export default function PyramidApp() {
 
   let singleNumber = 1;
 
-  for (let rowNumber = 1; (rowNumber = rows); rowNumber = rowNumber + 1) {
+  for (let rowNumber = 1; rowNumber <= rows; rowNumber = rowNumber + 1) {
     console.log(`rowNumber is ${rowNumber}`);
 
     let row_display = "";
@@ -19,15 +19,15 @@ export default function PyramidApp() {
   }
 
   return (
-    <div className="m-2 bg-pink-300 p-10 font-serif text-white">
+    <div className="m-5 bg-pink-300 p-10 font-bold text-white">
       Pyramid test
       <input
         type="number"
-        className="border-black p-4 text-black"
+        className=" border-black p-4 text-black"
+        value={rows}
         onChange={(e) => {
           set_rows(e.target.value);
         }}
-        value={rows}
       />
     </div>
   );
