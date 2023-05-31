@@ -1,40 +1,43 @@
 import { useState } from "react";
 
-type PyramidRow = {
-  rowNumber: number;
+type PyramidStep = {
+  stepNumber: number;
   bricks: number[];
 };
 
-function generatePyramid(input: number): PyramidRow[] {
-  const pyramid: PyramidRow[] = [];
+function generatePyramid(input: number): PyramidStep[] {
+  const pyramid: PyramidStep[] = [];
   let counter = 1;
   for (let y = 1; y <= y; y++) {
-    const newRow: PyramidRow = { rowNumber: y, bricks: [] };
+    const newStep: PyramidStep = { stepNumber: y, bricks: [] };
     for (let b = 1; b <= b; b++) {
-      newRow.bricks.push(counter), counter++;
+      newStep.bricks.push(counter), counter++;
     }
-    pyramid.push(newRow);
+    pyramid.push(newStep);
   }
   return pyramid;
 }
 
 export default function PyramidApp() {
-  const [rows, set_rows] = useState("");
+  const [rows, set_rows] = useState<number>(10);
+  const steps = generatePyramid(rows);
 
-  let singleNumber = 1;
 
-  for (let rowNumber = 1; (rowNumber = rows); rowNumber = rowNumber + 1) {
-    console.log(`rowNumber is ${rowNumber}`);
 
-    let row_display = "";
+  // let singleNumber = 1;
 
-    for (let y = 0; y < rowNumber; y = y + 1) {
-      row_display = `${row_display} ${singleNumber}`;
-      singleNumber = singleNumber + 1;
-    }
+  // for (let rowNumber = 1; (rowNumber = row); rowNumber = rowNumber + 1) {
+  //   console.log(`rowNumber is ${rowNumber}`);
 
-    console.log(row_display);
-  }
+  //   let row_display = "";
+
+  //   for (let y = 0; y < rowNumber; y = y + 1) {
+  //     row_display = `${row_display} ${singleNumber}`;
+  //     singleNumber = singleNumber + 1;
+  //   }
+
+  //   console.log(row_display);
+  // }
 
   return (
     <>
@@ -45,11 +48,23 @@ export default function PyramidApp() {
           className=" border-black p-4 text-black"
           value={rows}
           onChange={(event) => {
-            set_rows(event.target.value);
+            set_rows(event.target.valueAsNumber);
           }}
         />
       </div>
       <div className="m-10 bg-rose-300 p-10 "></div>
+      {steps.map((step,index)=>{
+        <div key={step.toString()}>
+          <div className=" mx-auto flex p-2">
+            (step.bricks.map((brick)=> {
+              return(
+                <div key={brick.toString()}
+              )
+            }
+          </div>
+        </div>
+      }
+      )}
     </>
   );
 }
