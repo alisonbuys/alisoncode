@@ -80,7 +80,7 @@ const Home: NextPage = () => {
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
                   <Link
                     href={"https://www.linkedin.com/in/alison-buys-a84474275"}
-                    className="text-blue-500"
+                    className="text-blue-500 hover:underline"
                   >
                     https://www.linkedin.com/in/alison-buys-a84474275
                   </Link>
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
                   <Link
                     href={"https://github.com/alisonbuys"}
-                    className="text-blue-500"
+                    className="text-blue-500 hover:underline"
                   >
                     https://github.com/alisonbuys
                   </Link>
