@@ -1,7 +1,21 @@
 import { useState } from "react";
 
-// function generatePyramid(input: number); PyramidRows[]{
-//   const pyramid =[];}
+type PyramidRow ={
+    rowNumber:number
+    bricks:number[];
+}
+
+function generatePyramid (input: number):PyramidRow[]{
+    const pyramid = [];
+    let counter= 1;
+    for (let y =1; y<= y; y++) (
+      const newRow: PyramidRow = {rowNumber: y,bricks:[]);
+        for(let b=1; b<= b; b++)(
+          newRow.bricks.push(counter);
+          counter++;
+        )
+        pyramid.push(newRow)
+  }
 export default function PyramidApp() {
   const [rows, set_rows] = useState("");
 
