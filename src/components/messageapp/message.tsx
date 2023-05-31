@@ -114,9 +114,9 @@ export function MessageApp() {
             </span>
           </div> */}
 
-          <div className="flex flex-row gap-1 p-1">
+          <div className=" flex flex-row gap-1 p-1">
             <input
-              className="flex-1 rounded-2xl border bg-white p-4 shadow-xl"
+              className=" flex-1 rounded-2xl border bg-white p-4 shadow-xl"
               value={message}
               onChange={(e) => {
                 messsage_update(e.target.value);
