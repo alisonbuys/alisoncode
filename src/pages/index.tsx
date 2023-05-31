@@ -117,7 +117,7 @@ const Home: NextPage = () => {
             Projects
           </h1>
           {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-          <div className="flex flex-col gap-4 sm:flex-row ">
+          <div className="flex flex-col gap-4  ">
             <ProjectThumbnailLinks
               link={"/projects/messageapp"}
               name={"Message App"}
