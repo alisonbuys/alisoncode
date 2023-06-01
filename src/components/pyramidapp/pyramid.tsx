@@ -8,9 +8,9 @@ type PyramidStep = {
 function generatePyramid(input: number): PyramidStep[] {
   const pyramid: PyramidStep[] = [];
   let counter = 1;
-  for (let y = 1; y <= y; y++) {
+  for (let y = 1; y <= input; y++) {
     const newStep: PyramidStep = { stepNumber: y, bricks: [] };
-    for (let b = 1; b <= b; b++) {
+    for (let b = 1; b <= y; b++) {
       newStep.bricks.push(counter), counter++;
     }
     pyramid.push(newStep);
@@ -19,24 +19,26 @@ function generatePyramid(input: number): PyramidStep[] {
 }
 
 export default function PyramidApp() {
-  const [rows, set_rows] = useState<number>(10);
+  const [rows, set_rows] = useState<number>(5);
   const steps = generatePyramid(rows);
 
   return (
     <>
-      <div className="bg-rose-300 p-10" />
       <input
+        className="mb-4 rounded-lg border-black bg-neutral-300 p-4"
         type="number"
         value={rows}
         onChange={(e) => set_rows(e.target.valueAsNumber)}
       />
-
       {steps.map((step, index) => (
-        <div key={step.toString()} className="m-1 flex gap-1 bg-pink-500">
+        <div key={step.toString()} className="m-1  flex gap-1">
           <div className="mx-auto flex p-2">
             {step.bricks.map((brick) => {
               return (
-                <div key={brick.toString()} className="m-4 h-4 bg-red-300">
+                <div
+                  key={brick.toString()}
+                  className="m-0.5 rounded-lg border border-rose-500 bg-rose-400 p-5"
+                >
                   {brick}
                 </div>
               );
