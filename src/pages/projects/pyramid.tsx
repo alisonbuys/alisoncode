@@ -5,7 +5,7 @@ import PyramidApp from "~/components/pyramidapp/pyramid";
 
 export default function PyramidAppPage() {
   return (
-    <div>
+    <div className="bg-sky-300">
       <Link href="/">Home</Link>
       <div className="container mx-auto max-w-md">
         <PyramidApp />

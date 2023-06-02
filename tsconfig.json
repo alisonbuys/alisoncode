@@ -28,6 +28,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs"
-, "src/pages/projects/store.ts"  ],
+, "src/pages/projects/store.ts", "src/components/pyramid3d-app"  ],
   "exclude": ["node_modules"]
 }
