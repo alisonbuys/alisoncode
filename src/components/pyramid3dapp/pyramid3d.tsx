@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Canvas } from "@react-three/fiber";
 
 type Cube = {
   stepNumber: number;
@@ -18,7 +19,7 @@ function generatePyramid(input: number): Cube[] {
   return pyramid;
 }
 
-export default function PyramidApp() {
+export default function Cube() {
   const [rows, set_rows] = useState<number>(1);
   const steps = generatePyramid(rows);
 
