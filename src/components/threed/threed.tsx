@@ -53,7 +53,7 @@ Source: https://sketchfab.com/3d-models/nike-air-zoom-pegasus-36-00fd99e778c244c
 Title: Nike Air Zoom Pegasus 36
 */
 
-function Shoe(props: any) {
+export function Shoe(props: any) {
   const { nodes, materials } = useGLTF(
     "/nike_air_zoom_pegasus_36-transformed.glb"
   ) as unknown as any;
