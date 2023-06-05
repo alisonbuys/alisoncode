@@ -20,7 +20,7 @@ function generatePyramid(input: number): Cube[] {
 }
 
 export default function Cube() {
-  const [rows, set_rows] = useState<number>(1);
+  const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
 
   return (
