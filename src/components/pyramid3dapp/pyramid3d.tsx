@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-type PyramidStep = {
+type Cube = {
   stepNumber: number;
   bricks: number[];
 };
 
-function generatePyramid(input: number): PyramidStep[] {
-  const pyramid: PyramidStep[] = [];
+function generatePyramid(input: number): Cube[] {
+  const pyramid: Cube[] = [];
   let counter = 1;
   for (let y = 1; y <= input; y++) {
-    const newStep: PyramidStep = { stepNumber: y, bricks: [] };
+    const newStep: Cube = { stepNumber: y, bricks: [] };
     for (let b = 1; b <= y; b++) {
       newStep.bricks.push(counter), counter++;
     }
