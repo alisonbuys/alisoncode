@@ -25,19 +25,19 @@ export default function PyramidApp() {
   return (
     <>
       <input
-        className="mb-4 rounded-lg border-black bg-neutral-300 p-4"
+        className="ml-5 rounded-lg border-black bg-neutral-300 p-4"
         type="number"
         value={rows}
         onChange={(e) => set_rows(e.target.valueAsNumber)}
       />
       {steps.map((step, index) => (
-        <div key={step.toString()} className="m-1  flex gap-1">
+        <div key={step.toString()} className="m-1 flex gap-1">
           <div className=" mx-auto flex p-2">
             {step.bricks.map((brick) => {
               return (
                 <div
                   key={brick.toString()}
-                  className="m-0.5 rounded-lg border-4 border-green-600 bg-rose-500 p-5"
+                  className=" m-0.5 rounded-md bg-white p-2"
                 >
                   {brick}
                 </div>
