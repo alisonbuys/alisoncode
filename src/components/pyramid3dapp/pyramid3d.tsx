@@ -1,25 +1,40 @@
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 
-type Cube = {
+type PyramidSteps = {
   stepNumber: number;
-  bricks: number[];
+  cubes: number[];
 };
 
-function generatePyramid(input: number): Cube[] {
-  const pyramid: Cube[] = [];
+function generatePyramid(input: number): PyramidSteps[] {
+  const pyramid: PyramidSteps[] = [];
   let counter = 1;
   for (let y = 1; y <= input; y++) {
-    const newStep: Cube = { stepNumber: y, bricks: [] };
+    const newStep: PyramidSteps = { stepNumber: y, cubes: [] };
     for (let b = 1; b <= y; b++) {
-      newStep.bricks.push(counter), counter++;
+      newStep.cubes.push(counter), counter++;
     }
     pyramid.push(newStep);
   }
   return pyramid;
 }
+// Add Cube
+export function Cube() {
+  return (
+    <Canvas
+      camera={{
+        fov: 45,
+        near: 0.1,
+        far: 200,
+        position: [3, 2, 6],
+      }}
+    >
+      <Cube />
+    </Canvas>
+  );
+}
 
-export default function Cube() {
+export default function Pyramid3dApp() {
   const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
 
@@ -34,15 +49,8 @@ export default function Cube() {
       {steps.map((step, index) => (
         <div key={step.toString()} className="m-1  flex gap-1">
           <div className=" mx-auto flex p-2">
-            {step.bricks.map((brick) => {
-              return (
-                <div
-                  key={brick.toString()}
-                  className="m-0.5 rounded-lg border-4 border-green-600 bg-rose-500 p-5"
-                >
-                  {brick}
-                </div>
-              );
+            {step.cubes.map((cube) => {
+              return <div key={cube.toString()}>{cube}</div>;
             })}
           </div>
         </div>
