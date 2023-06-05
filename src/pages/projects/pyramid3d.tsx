@@ -7,7 +7,7 @@ export default function Pyramid3dAppPage() {
   return (
     <div>
       <Link href="/">Home</Link>
-      <div className="container mx-auto max-w-md">
+      <div className="container mx-auto">
         <Pyramid3dApp />
       </div>
     </div>

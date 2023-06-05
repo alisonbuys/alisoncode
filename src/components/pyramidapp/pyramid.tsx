@@ -19,7 +19,7 @@ function generatePyramid(input: number): PyramidStep[] {
 }
 
 export default function PyramidApp() {
-  const [rows, set_rows] = useState<number>(1);
+  const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
 
   return (
