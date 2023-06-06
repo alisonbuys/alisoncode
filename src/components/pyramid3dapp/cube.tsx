@@ -10,7 +10,7 @@ export default function Cube(props: { position: Vector3 }) {
       {/* <orbitControls args={[camera, gl.domElement]} /> */}
       <mesh ref={cubeRef} position={props.position} scale={0.95}>
         <boxGeometry />
-        <meshStandardMaterial color="hotpink" />
+        <meshStandardMaterial color="orange" />
       </mesh>
     </>
   );
