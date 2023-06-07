@@ -22,13 +22,6 @@ function generatePyramid(input: number): PyramidStep[] {
   return pyramid;
 }
 
-// function addPyramids(input:number){
-//   let rows= 0
-//   for( let x = 0 ; x < input; x++)
-//   for(let z = 0 ; z < input; z++){
-
-//   }
-// }
 export default function PyramidApp() {
   const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
