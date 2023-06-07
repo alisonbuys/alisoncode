@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { useState } from "react";
 import Cube from "./cube";
 import { OrbitControls } from "@react-three/drei";
+import { type } from "os";
 
 type PyramidStep = {
   stepNumber: number;
@@ -20,7 +21,11 @@ function generatePyramid(input: number): PyramidStep[] {
   }
   return pyramid;
 }
-function PyramidBlocks() {
+type PyramidBlocks = {
+  blocks: number;
+};
+
+function addPyramids() {
   let i = 0;
   for (let x = 0; x < 4; x++)
     for (let y = 0; y < 4; y++)
@@ -31,7 +36,7 @@ function PyramidBlocks() {
 export default function PyramidApp() {
   const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
-  const blocks = PyramidBlocks();
+  const blocks = addPyramids();
 
   return (
     <>
