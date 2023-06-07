@@ -25,11 +25,12 @@ type PyramidBlocks = {
   blocks: number;
 };
 
-function addPyramids() {
-  let i = 0;
-  for (let x = 0; x < 4; x++)
-    for (let y = 0; y < 4; y++)
-      for (let z = 0; z < 4; z++) {
+function addPyramids(): PyramidBlocks[] {
+  const pyramids: PyramidBlocks[] = [];
+  let i = 1;
+  for (let x = 1; x < 4; x++)
+    for (let y = 1; y < 4; y++)
+      for (let z = 1; z < 4; z++) {
         const id = i++;
       }
 }
