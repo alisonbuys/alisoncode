@@ -3,6 +3,7 @@ import { useState } from "react";
 import Cube from "./cube";
 import { OrbitControls } from "@react-three/drei";
 import { type } from "os";
+import { generatePyramidStep } from "~/pages/projects/pyramidsquare";
 
 type PyramidStep = {
   stepNumber: number;
@@ -25,7 +26,7 @@ function generatePyramid(input: number): PyramidStep[] {
 export default function PyramidApp() {
   const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
-  // const blocks = addPyramids();
+  const blocks = generatePyramidStep(rows);
 
   return (
     <>
