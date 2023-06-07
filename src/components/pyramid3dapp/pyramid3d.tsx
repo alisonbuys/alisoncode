@@ -44,20 +44,18 @@ export default function PyramidApp() {
 
           {steps.map((step, step_number) => (
             <>
-              <>
-                {step.bricks.map((brick, bricknum) => {
-                  return (
-                    <Cube
-                      key={brick}
-                      position={[
-                        0,
-                        -step.stepNumber,
-                        (step.stepNumber - bricknum * 2) / 2,
-                      ]}
-                    />
-                  );
-                })}
-              </>
+              {step.bricks.map((brick, bricknum) => {
+                return (
+                  <Cube
+                    key={brick}
+                    position={[
+                      0,
+                      -step.stepNumber,
+                      (step.stepNumber - bricknum * 2) / 2,
+                    ]}
+                  />
+                );
+              })}
             </>
           ))}
         </Canvas>
