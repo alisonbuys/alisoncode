@@ -21,23 +21,19 @@ function generatePyramid(input: number): PyramidStep[] {
   }
   return pyramid;
 }
-type PyramidBlocks = {
-  blocks: number;
-};
 
-function addPyramids(): PyramidBlocks[] {
-  const pyramids: PyramidBlocks[] = [];
-  let i = 1;
-  for (let x = 1; x < 4; x++)
-    for (let y = 1; y < 4; y++)
-      for (let z = 1; z < 4; z++) {
-        const id = i++;
-      }
-}
+// function addPyramids() {
+//   let i = 1;
+//   for (let x = 1; x < 4; x++)
+//     for (let y = 1; y < 4; y++)
+//       for (let z = 1; z < 4; z++) {
+//         const id = i++;
+//       }
+// }
 export default function PyramidApp() {
   const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
-  const blocks = addPyramids();
+  // const blocks = addPyramids();
 
   return (
     <>
