@@ -30,7 +30,7 @@ export function generatePyramidStep(input: number): PyramidStep[] {
 
 export default function PyramidApp() {
   const [rows, set_rows] = useState<number>(10);
-  const steps = generatePyramidStep(rows);
+  const blocks = generatePyramidStep(rows);
 
   return (
     <>
@@ -40,10 +40,10 @@ export default function PyramidApp() {
         value={rows}
         onChange={(e) => set_rows(e.target.valueAsNumber)}
       />
-      {steps.map((step, index) => (
-        <div key={step.toString()} className="m-1 flex gap-1">
+      {blocks.map((block, index) => (
+        <div key={block.toString()} className="m-1 flex gap-1">
           <div className=" mx-auto flex p-2">
-            {step.bricks.map((brick) => {
+            {block.bricks.map((brick) => {
               return (
                 <div
                   key={brick.toString()}
