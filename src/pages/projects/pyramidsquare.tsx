@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Cube from "~/components/pyramid3dapp/cube";
 
 type Brick = {
   id: string;
@@ -45,14 +46,23 @@ export default function PyramidApp() {
           <div className=" mx-auto flex p-2">
             {block.bricks.map((brick) => {
               return (
-                <div
-                  key={brick.toString()}
-                  className=" m-0.5 rounded-md bg-white p-2"
-                >
-                  <pre>
-                    [{brick.x},{brick.y}]
-                  </pre>
-                </div>
+                <>
+                 
+                    key={brick.toString()}
+                    <Cube
+                      key={brick}
+                      position={[
+                        0,
+                        -step.stepNumber,
+                        (step.stepNumber - bricknum * 2) / 2,
+                      ]}
+                  
+                
+                    <pre>
+                      [{brick.x},{brick.y}]
+                    </pre>
+                  />
+                </>
               );
             })}
           </div>
