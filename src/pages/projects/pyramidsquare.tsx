@@ -1,3 +1,4 @@
+import { Canvas } from "@react-three/fiber";
 import { useState } from "react";
 import Cube from "~/components/pyramid3dapp/cube";
 
@@ -41,6 +42,9 @@ export default function PyramidApp() {
         value={rows}
         onChange={(e) => set_rows(e.target.valueAsNumber)}
       />
+      <div>
+        <Canvas></Canvas>
+      </div>
       {blocks.map((block, index) => (
         <div key={block.toString()} className="m-1 flex gap-1">
           <div className=" mx-auto flex p-2">
