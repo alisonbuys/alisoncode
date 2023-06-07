@@ -20,10 +20,18 @@ function generatePyramid(input: number): PyramidStep[] {
   }
   return pyramid;
 }
-
+function PyramidBlocks() {
+  let i = 0;
+  for (let x = 0; x < 4; x++)
+    for (let y = 0; y < 4; y++)
+      for (let z = 0; z < 4; z++) {
+        const id = i++;
+      }
+}
 export default function PyramidApp() {
   const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
+  const blocks = PyramidBlocks();
 
   return (
     <>
@@ -31,7 +39,7 @@ export default function PyramidApp() {
         className="ml-5 rounded-lg border-black bg-neutral-300 p-4"
         type="number"
         value={rows}
-        onChange={(e) => set_rows(e.target.valueAsNumber)}
+        onChange={(e) => set_rows(e.target.valueAsNumber * 4)}
       />
       <div className="h-screen bg-gray-500">
         <Canvas camera={{ position: [0, 0, 4], fov: 40 }}>
