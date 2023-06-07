@@ -14,11 +14,11 @@ type PyramidStep = {
 
 export function generatePyramidStep(input: number): PyramidStep[] {
   const pyramid: PyramidStep[] = [];
-  let counter = 0;
+  let counter = 1;
 
-  for (let y = 0; y < input; y++) {
+  for (let y = 1; y < input; y++) {
     const newStep: PyramidStep = { stepNumber: y, bricks: [] };
-    for (let x = 0; x < input; x++) {
+    for (let x = 1; x < input; x++) {
       let id = "test";
       id = crypto.randomUUID();
       newStep.bricks.push({ x, y, id }), counter++;
