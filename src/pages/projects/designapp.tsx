@@ -10,7 +10,7 @@ export default function DesignAppPage() {
       >
         Home
       </Link>
-      <div className="container mx-auto max-w-md  ">
+      <div className="container mx-auto max-w-md ">
         <DesignApp />
       </div>
     </div>
