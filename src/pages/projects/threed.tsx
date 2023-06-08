@@ -6,7 +6,12 @@ import ThreeDApp from "~/components/threed/threed";
 export default function ThreedAppPage() {
   return (
     <div>
-      <Link href="/">Home</Link>
+      <Link
+        className="rounded-lg border border-black bg-slate-200 p-2 hover:bg-slate-400"
+        href="/"
+      >
+        Home
+      </Link>
       <div className="container mx-auto h-screen w-screen bg-gray-800">
         <ThreeDApp />
       </div>

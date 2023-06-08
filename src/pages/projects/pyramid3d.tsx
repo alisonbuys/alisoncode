@@ -8,7 +8,12 @@ import Pyramid3dApp from "~/components/pyramid3dapp/pyramid3d";
 export default function Pyramid3dAppPage() {
   return (
     <div>
-      <Link href="/">Home</Link>
+      <Link
+        className="rounded-lg border border-black bg-slate-200 p-2 hover:bg-slate-400"
+        href="/"
+      >
+        Home
+      </Link>
       <div className="container mx-auto">
         <Pyramid3dApp />
       </div>
