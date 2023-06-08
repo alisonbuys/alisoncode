@@ -15,19 +15,22 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="p-7">
-        <div className="flex h-20 bg-red-700 p-4">
-          <Image
-            height={100}
-            width={100}
-            src={"/assets/images/photo.jpg"}
-            className="h-10 w-10 rounded-full "
-            alt={"people"}
-          />
-          <div className=" mt-2 flex-auto text-base font-bold">MY PROFILE</div>
-        </div>
-        <div className="p-5"></div>
+        <Image
+          height={100}
+          width={100}
+          src={"/assets/images/logo.png"}
+          className="h-20 w-20 rounded-full "
+          alt={"logo"}
+        />
 
         <div className="rounded-2xl bg-slate-100 p-10 shadow-inner">
+          {/* <Image
+            height={100}
+            width={100}
+            src={"/assets/images/logo.png"}
+            className="h-20 w-20 rounded-full "
+            alt={"people"}
+          /> */}
           <Image
             height={200}
             width={200}
