@@ -30,26 +30,35 @@ const Home: NextPage = () => {
               Web Developer
             </div>
           </div>
-          <div className=" p-6 pl-10 pt-10 font-serif text-4xl">
-            Hi, my name is <b className="text-purple-700">Alison Buys</b>...
+          <div className=" container relative mx-auto h-full overflow-hidden rounded-lg ">
+            <Image
+              height={500}
+              width={500}
+              src={"/assets/images/code.webp"}
+              className="w-full"
+              alt={"purple background"}
+            />
+          </div>
+          <div className=" absolute top-80 p-6 pl-10 pt-28 font-serif text-4xl text-white">
+            Hi, my name is <b className="text-white">Alison Buys</b>...
           </div>
 
-          <div className="border-white pl-10 pr-40 font-serif">
+          <div className="absolute top-96 border-white pl-10 pr-40 pt-24 font-serif text-white">
             I am a outgoing and ambitious high school graduate.Eager to use my
             programming experience and communication skills to work as an
             <b> software developer</b>.
           </div>
           <div className="flex justify-end pr-20">
-            <Image
+            {/* <Image
               height={300}
               width={300}
               src={"/assets/images/sketch.jpeg"}
               className="h-800 w-800 rounded-md"
               alt={"girl with laptop"}
-            />
+            /> */}
           </div>
 
-          <div className="bg-white py-24 sm:py-32">
+          <div className="bg-white py-10 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <h2 className="flex font-serif text-3xl tracking-tight text-gray-900">
