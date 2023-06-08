@@ -146,6 +146,12 @@ const Home: NextPage = () => {
               name={"3D Pyramid App"}
               description={"A simple 3D pyramid clone built with react."}
             />
+
+            <ProjectThumbnailLinks
+              link={"/projects/designapp"}
+              name={"App Design"}
+              description={"A simple App Design clone built with react."}
+            />
           </div>
         </div>
       </main>
