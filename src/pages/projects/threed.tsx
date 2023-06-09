@@ -12,7 +12,7 @@ export default function ThreedAppPage() {
       >
         Home
       </Link>
-      <div className="container mx-auto h-screen w-screen bg-gray-800">
+      <div className="container mx-auto h-screen w-screen bg-gray-800 pt-4">
         <ThreeDApp />
       </div>
     </div>
