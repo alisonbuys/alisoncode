@@ -34,16 +34,16 @@ const Home: NextPage = () => {
             <Image
               height={100}
               width={500}
-              src={"/assets/images/code.webp"}
-              className="h-32 w-full rounded-lg border"
+              src={"/assets/images/wall.jpg"}
+              className=" w-full rounded-lg border"
               alt={"purple background"}
             />
           </div>
-          <div className="p-6 pl-10 font-serif text-4xl text-black">
-            Hi, my name is <b className="text-black">Alison Buys</b>...
+          <div className="p-6 pl-10 font-serif text-4xl text-white">
+            Hi, my name is <b className="text-white">Alison Buys</b>...
           </div>
 
-          <div className=" border-white pl-10 pr-40  font-serif text-black">
+          <div className=" border-white pl-10 pr-40  font-serif text-white">
             I am a outgoing and ambitious high school graduate.Eager to use my
             programming experience and communication skills to work as an
             <b> software developer</b>.
