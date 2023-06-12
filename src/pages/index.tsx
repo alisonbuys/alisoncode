@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
       <body className="bg-gradient-to-b from-white via-purple-200 to-pink-200">
         <main className="">
-          <div className="flex h-20 p-4">
+          {/* <div className="flex h-20 p-4">
             <Image
               height={100}
               width={100}
@@ -29,8 +29,8 @@ const Home: NextPage = () => {
             <div className=" border-l border-purple-700 pl-2 pt-2 font-serif text-lg">
               Web Developer
             </div>
-          </div>
-          <div className=" relative ">
+          </div> */}
+          {/* <div className=" relative ">
             <Image
               height={100}
               width={500}
@@ -38,135 +38,25 @@ const Home: NextPage = () => {
               className=" w-full rounded-lg border"
               alt={"purple background"}
             />
-          </div>
-          <div className="p-6 pl-10 font-serif text-4xl text-white">
-            Hi, my name is <b className="text-white">Alison Buys</b>...
+          </div> */}
+          <div className="text- p-6 pl-10 font-serif text-4xl">
+            Hi, my name is <b className="text-purple-700">Alison Buys</b>...
           </div>
 
-          <div className=" border-white pl-10 pr-40  font-serif text-white">
+          <div className=" border-white pl-10 pr-40  font-serif text-black">
             I am a outgoing and ambitious high school graduate.Eager to use my
             programming experience and communication skills to work as an
             <b> software developer</b>.
           </div>
 
           <div className="flex justify-end pr-20">
-            {/* <Image
+            <Image
               height={300}
               width={300}
               src={"/assets/images/sketch.jpeg"}
               className="h-800 w-800 rounded-md"
               alt={"girl with laptop"}
-            /> */}
-          </div>
-
-          <div className="py-10 sm:py-32">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto max-w-2xl lg:mx-0">
-                <h2 className="flex font-serif text-3xl tracking-tight text-gray-900">
-                  Contact me
-                </h2>
-                <p className="mt-6 font-serif text-lg leading-8 text-gray-600">
-                  You can contact me on any of the following platforms below:
-                </p>
-              </div>
-              <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-                <div>
-                  <h3 className="border-l border-indigo-600 pl-6 font-serif font-semibold text-gray-900">
-                    Cell
-                  </h3>
-                  <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                    <p>062 340 2856</p>
-                  </address>
-                </div>
-                <div>
-                  <h3 className="border-l border-indigo-600 pl-6 font-serif font-semibold text-gray-900">
-                    Email
-                  </h3>
-                  <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                    <p>alisonbuys15@gmail.com</p>
-                  </address>
-                </div>
-                <div>
-                  <h3 className="border-l border-indigo-600 pl-6 font-serif font-semibold text-gray-900">
-                    Linked in
-                  </h3>
-                  <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                    <Link
-                      href={"https://www.linkedin.com/in/alison-buys-a84474275"}
-                      className="text-blue-500 hover:underline"
-                    >
-                      https://www.linkedin.com/in/alison-buys-a84474275
-                    </Link>
-                  </address>
-                </div>
-                <div>
-                  <h3 className="border-l border-indigo-600 pl-6 font-serif font-semibold text-gray-900">
-                    GitHub
-                  </h3>
-                  <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                    <Link
-                      href={"https://github.com/alisonbuys"}
-                      className="text-blue-500 hover:underline"
-                    >
-                      https://github.com/alisonbuys
-                    </Link>
-                  </address>
-                </div>
-                <div>
-                  <h3 className="border-l border-indigo-600 pl-6 font-serif font-semibold text-gray-900">
-                    Location
-                  </h3>
-                  <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                    <p>South Africa ,Western Cape</p>
-                    <p>Mossel Bay</p>
-                  </address>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="container mx-auto rounded-2xl bg-gray-100 p-4">
-            <h1 className="flex pb-5 font-serif text-3xl tracking-tight text-black">
-              My Projects
-              <PencilSquareIcon className=" h-10 w-10 pb-2 pl-2.5" />
-            </h1>
-            {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-            <div className="flex flex-col gap-4  ">
-              <ProjectThumbnailLinks
-                link={"/projects/messageapp"}
-                name={"Message App"}
-                description={"A simple whatsapp clone built with react."}
-              />
-
-              <ProjectThumbnailLinks
-                link={"/projects/todoapp"}
-                name={"TODO App"}
-                description={"A simple todo clone built with react."}
-              />
-
-              <ProjectThumbnailLinks
-                link={"/projects/threed"}
-                name={"ThreeD App"}
-                description={"A simple 3D clone built with react."}
-              />
-
-              <ProjectThumbnailLinks
-                link={"/projects/pyramid"}
-                name={"Pyramid App"}
-                description={"A simple pyramid clone built with react."}
-              />
-              <ProjectThumbnailLinks
-                link={"/projects/pyramid3d"}
-                name={"3D Pyramid App"}
-                description={"A simple 3D pyramid clone built with react."}
-              />
-
-              <ProjectThumbnailLinks
-                link={"/projects/designapp"}
-                name={"App Design"}
-                description={"A simple App Design clone built with react."}
-              />
-            </div>
+            />
           </div>
         </main>
       </body>
@@ -174,20 +64,20 @@ const Home: NextPage = () => {
   );
 };
 
-function ProjectThumbnailLinks(props: {
-  link: string;
-  name: string;
-  description: string;
-}) {
-  return (
-    <Link href={props.link} className="">
-      <div className="h-full rounded-lg bg-gray-300 p-4 pb-4 transition hover:bg-purple-300">
-        <h3 className="font-serif text-purple-700">{props.name}</h3>
+// function ProjectThumbnailLinks(props: {
+//   link: string;
+//   name: string;
+//   description: string;
+// }) {
+//   return (
+//     <Link href={props.link} className="">
+//       <div className="h-full rounded-lg bg-gray-300 p-4 pb-4 transition hover:bg-purple-300">
+//         <h3 className="font-serif text-purple-700">{props.name}</h3>
 
-        <div className="font-serif">{props.description}</div>
-      </div>
-    </Link>
-  );
-}
+//         <div className="font-serif">{props.description}</div>
+//       </div>
+//     </Link>
+//   );
+// }
 
 export default Home;
