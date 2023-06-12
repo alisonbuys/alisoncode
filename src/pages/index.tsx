@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           <div className="flex justify-center p-6 pl-10 font-serif text-4xl">
             Hi, my name is Alison Buys ...
           </div>
-          <div className="flex h-20 justify-center p-4">
+          <div className="flex h-20 justify-center gap-1 p-4">
             <Image
               height={100}
               width={100}
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
               className="h-14 w-14"
               alt={"logo"}
             />
-            <div className=" border-l border-purple-700 pl-2 pt-2 font-serif text-lg">
+            <div className="  border-l border-purple-700 pl-2 pt-2 font-serif text-lg">
               Web Developer
             </div>
           </div>
