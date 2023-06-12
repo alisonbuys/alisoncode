@@ -59,7 +59,12 @@ export function MessageApp() {
             <ArrowLeftIcon className="h-8 w-8 text-white" />
 
             <div className="h-10 w-10 overflow-hidden rounded-full">
-              <Image src="/people.png" width={100} height={100} alt="people" />
+              <Image
+                src={"/assets/images/girl.jpeg"}
+                width={100}
+                height={100}
+                alt="girl"
+              />
             </div>
 
             <div className="flex-1">
