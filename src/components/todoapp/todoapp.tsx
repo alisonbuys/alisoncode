@@ -1,12 +1,8 @@
 // import React,{FormEvent,FunctionCompont as FC} from "react";
 import { useEffect, useState } from "react";
-import {
-  CheckIcon,
-  ChevronDownIcon,
-  ChevronUpIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
 import { useTodoState } from "./todostate";
+import { FiTrash2 } from "react-icons/fi";
+import { BiSortDown, BiSortUp, BiTask } from "react-icons/bi";
 
 export type TodoItem = {
   id: string;
@@ -91,7 +87,7 @@ export function TodoApp() {
                 className="rounded-md border bg-rose-400 p-2 text-white transition hover:bg-rose-500"
               >
                 {" "}
-                <ChevronUpIcon className="h-5 w-5"></ChevronUpIcon>{" "}
+                <BiSortUp className="h-5 w-5"></BiSortUp>{" "}
               </button>
               <button
                 onClick={() => {
@@ -108,7 +104,7 @@ export function TodoApp() {
                 className="rounded-md border bg-rose-400 p-2 text-white transition hover:bg-rose-500"
               >
                 {" "}
-                <ChevronDownIcon className="h-5 w-5"></ChevronDownIcon>{" "}
+                <BiSortDown className="h-5 w-5"></BiSortDown>{" "}
               </button>
               <button
                 onClick={() => {
@@ -125,7 +121,7 @@ export function TodoApp() {
                 className="rounded-md border bg-rose-400 p-2 text-white transition hover:bg-rose-500"
               >
                 {" "}
-                <CheckIcon className="h-5 w-5"></CheckIcon>{" "}
+                <BiTask className="h-5 w-5"></BiTask>{" "}
               </button>
 
               <button
@@ -143,7 +139,7 @@ export function TodoApp() {
                 className="rounded-md border bg-rose-400 p-2 text-white transition hover:bg-rose-500"
               >
                 {" "}
-                <XMarkIcon className="h-5 w-5"></XMarkIcon>{" "}
+                <FiTrash2 className="h-5 w-5"></FiTrash2>{" "}
               </button>
             </div>
           );
