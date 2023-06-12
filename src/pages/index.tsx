@@ -36,7 +36,7 @@ const Home: NextPage = () => {
               height={800}
               width={900}
               src={"/assets/images/code.webp"}
-              className="rounded-xl shadow-xl shadow-indigo-950"
+              className="rounded-xl shadow-lg shadow-indigo-950"
               alt={"code picture"}
             />
           </div>
