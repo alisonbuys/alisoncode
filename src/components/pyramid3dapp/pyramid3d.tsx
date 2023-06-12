@@ -2,8 +2,6 @@ import { Canvas } from "@react-three/fiber";
 import { useState } from "react";
 import Cube from "./cube";
 import { OrbitControls } from "@react-three/drei";
-import { type } from "os";
-import { generatePyramidStep } from "~/pages/projects/pyramidsquare";
 
 type PyramidStep = {
   stepNumber: number;
@@ -26,7 +24,6 @@ function generatePyramid(input: number): PyramidStep[] {
 export default function PyramidApp() {
   const [rows, set_rows] = useState<number>(10);
   const steps = generatePyramid(rows);
-  const blocks = generatePyramidStep(rows);
 
   return (
     <>
@@ -42,7 +39,7 @@ export default function PyramidApp() {
           <directionalLight position={[1, 2, 3]} intensity={1.5} />
           <ambientLight intensity={0.5} />
 
-          {steps.map((step, step_number) => (
+          {steps.map((step) => (
             <>
               {step.bricks.map((brick, bricknum) => {
                 return (
