@@ -104,7 +104,7 @@ export function MessageApp() {
             }
 
             return (
-              <div key={chat.id} className="mt-6 w-full flex-row">
+              <div key={chat.id} className="mt-6 w-full flex-row pb-5">
                 <span className="m-auto rounded-xl border-white bg-white p-3 shadow-md">
                   {chat.message}
                 </span>
@@ -119,7 +119,7 @@ export function MessageApp() {
             </span>
           </div> */}
 
-          <div className=" flex flex-row gap-1 p-1">
+          <div className=" flex flex-row gap-1 pb-5">
             <input
               className=" flex-1 rounded-2xl border bg-white p-4 shadow-xl"
               value={message}
