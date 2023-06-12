@@ -1,13 +1,6 @@
-import { HomeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { ReactNode } from "react";
-import {
-  FcHome,
-  FcAbout,
-  FcFolder,
-  FcPhone,
-  FcBusinessContact,
-} from "react-icons/fc";
+import { type ReactNode } from "react";
+import { FcHome, FcAbout, FcFolder, FcBusinessContact } from "react-icons/fc";
 
 export function AppLayout(props: { children: ReactNode }) {
   return (

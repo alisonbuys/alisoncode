@@ -1,9 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
-import { PencilIcon, PencilSquareIcon } from "@heroicons/react/24/solid";
-import { PhoneIcon } from "@heroicons/react/24/outline";
+
 // import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
