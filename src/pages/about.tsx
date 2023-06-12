@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <>
       <div className="">
-        <div className="flex flex-row">
+        <div className="flex flex-row pb-4">
           <Image
             height={200}
             width={200}
