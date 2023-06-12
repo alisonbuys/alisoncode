@@ -7,24 +7,10 @@ export function AppLayout(props: { children: ReactNode }) {
   return (
     <>
       <div className="container mx-auto mt-5">
-        <div className="flex gap-4 rounded-lg bg-purple-200 p-2">
-          <div className="flex justify-start">
-            <div className="flex h-20 justify-start gap-1 p-4">
-              <Image
-                height={100}
-                width={100}
-                src={"/assets/images/logo.png"}
-                className="h-14 w-14 rounded-full"
-                alt={"logo"}
-              />
-              <div className=" border-l border-purple-700 pl-2 pt-2 font-serif text-lg">
-                Web Developer
-              </div>
-            </div>
-          </div>
+        <div className="flex justify-center gap-4 rounded-lg bg-purple-200 p-5">
           <Link
             href="/"
-            className="flex flex-row items-center gap-2 rounded bg-purple-100 px-4 py-2 transition hover:bg-white hover:underline"
+            className=" flex flex-row items-center gap-2 rounded bg-purple-100 px-4 py-2 transition hover:bg-white hover:underline"
           >
             <FcHome />
             Home
