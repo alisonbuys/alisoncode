@@ -49,12 +49,12 @@ export default function PyramidApp() {
           <directionalLight position={[1, 2, 3]} intensity={1.5} />
           <ambientLight intensity={0.5} />
 
-          {blocks.map((block, index) => (
+          {blocks.map((block) => (
             <>
               {block.bricks.map((brick, bricknum) => {
                 return (
                   <Cube
-                    key={brick}
+                    key={brick.id}
                     position={[
                       0,
                       -block.stepNumber,
