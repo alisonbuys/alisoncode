@@ -48,6 +48,7 @@ export default function ProjectsPage() {
     </div>
   );
 }
+
 function ProjectThumbnailLinks(props: {
   link: string;
   name: string;

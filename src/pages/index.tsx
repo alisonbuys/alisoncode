@@ -24,7 +24,7 @@ const Home: NextPage = () => {
               height={100}
               width={100}
               src={"/assets/images/logo.png"}
-              className="h-14 w-14 rounded-xl pb-1 shadow-sm "
+              className="h-14 w-14 rounded-xl pb-1 shadow-xl "
               alt={"logo"}
             />
             <div className="text-md border-l border-purple-700 pl-2 pt-2 font-mono">
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
                 height={200}
                 width={200}
                 src={"/assets/images/photo.jpg"}
-                className="rounded-full border-4 border-purple-500 shadow-lg"
+                className="rounded-full border-4 border-purple-500 shadow-xl"
                 alt={"a picture of myself"}
               />
             </div>
