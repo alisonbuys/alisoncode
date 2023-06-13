@@ -30,7 +30,7 @@ export default function PyramidApp() {
         value={rows}
         onChange={(e) => set_rows(e.target.valueAsNumber)}
       />
-      {steps.map((step, index) => (
+      {steps.map((step) => (
         <div key={step.toString()} className="m-1 flex gap-1">
           <div className=" mx-auto flex p-2">
             {step.bricks.map((brick) => {

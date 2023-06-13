@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { type ReactNode } from "react";
-import { FcHome, FcAbout, FcFolder, FcBusinessContact } from "react-icons/fc";
-import Image from "next/image";
+import { FcHome, FcFolder, FcBusinessContact } from "react-icons/fc";
 
 export function AppLayout(props: { children: ReactNode }) {
   return (
