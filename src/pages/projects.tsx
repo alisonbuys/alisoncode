@@ -55,7 +55,7 @@ function ProjectThumbnailLinks(props: {
 }) {
   return (
     <Link href={props.link} className="">
-      <div className="h-full rounded-lg bg-gray-300 p-4 pb-4 transition hover:bg-purple-300">
+      <div className="h-full rounded-lg bg-purple-200 p-4 pb-4 transition delay-150 duration-300  ease-in-out hover:-translate-y-1 hover:scale-100 hover:bg-purple-300">
         <h3 className="font-serif text-purple-700">{props.name}</h3>
 
         <div className="font-serif">{props.description}</div>
