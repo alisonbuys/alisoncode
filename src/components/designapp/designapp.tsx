@@ -14,7 +14,7 @@ export function DesignApp() {
           <div className="relative flex justify-center py-10">
             <Image
               height={500}
-              width={700}
+              width={800}
               src={"/assets/images/neon.jpg"}
               className="rounded-xl shadow-xl shadow-indigo-950"
               alt={"code picture"}
