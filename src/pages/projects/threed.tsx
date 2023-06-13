@@ -1,6 +1,4 @@
 // export { MessageApp } from "~/components/message";
-
-import Link from "next/link";
 import ThreeDApp from "~/components/threed/threed";
 
 export default function ThreedAppPage() {

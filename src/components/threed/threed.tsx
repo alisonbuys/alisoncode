@@ -1,16 +1,11 @@
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import {
   useGLTF,
-  MeshTransmissionMaterial,
   ContactShadows,
   Environment,
   OrbitControls,
   Html,
 } from "@react-three/drei";
-import { easing } from "maath";
-import { useStore } from "./store";
-import { Vector3 } from "three";
-import { applyProps } from "@react-three/fiber/dist/declarations/src/core/utils";
 
 export default function App() {
   return (
