@@ -33,9 +33,7 @@ export function AppLayout(props: { children: ReactNode }) {
         </Link>
       </div>
 
-      <div className="container m-5 mx-auto rounded-lg bg-neutral-100 p-5">
-        {props.children}
-      </div>
+      <div>{props.children}</div>
     </>
   );
 }
