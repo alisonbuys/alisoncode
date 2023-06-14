@@ -1,6 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { BsCloudArrowUpFill, BsPersonLock, BsStarFill } from "react-icons/bs";
+import {
+  FcAudioFile,
+  FcDocument,
+  FcImageFile,
+  FcVideoFile,
+} from "react-icons/fc";
 import { IoIosPeople } from "react-icons/io";
 
 export function DesignApp() {
@@ -12,19 +18,23 @@ export function DesignApp() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex">
-        <div className="h-screen w-48 rounded-l-md bg-blue-900 p-7">
+      <main className="flex h-fit">
+        {/* <div className="bg-green-500 sm:bg-blue-500 md:bg-yellow-500 lg:bg-orange-500 xl:bg-purple-500">
+          TEST
+        </div> */}
+
+        <div className="w-48 rounded-l-md bg-blue-900 p-7">
           <div className="flex justify-center pb-5 pt-5">
             <Image
               height={100}
               width={100}
-              src={"/assets/images/avatar.jpeg"}
+              src={"/assets/images/profile.jpeg"}
               className=" h-14 w-14 rounded-full border-2 border-white "
               alt={"logo"}
             />
           </div>
-          <div className="flex auto-cols-max flex-col gap-7 py-5 text-sm font-semibold text-white">
-            <div className="flex gap-1 hover:bg-blue-950">
+          <div className="flex flex-col gap-7 py-5 text-sm font-semibold text-white">
+            <div className="flex gap-1  hover:bg-blue-950">
               <BsPersonLock className="h-5 w-5" />
               My cloud
             </div>
@@ -43,7 +53,42 @@ export function DesignApp() {
             <div className="flex gap-1 hover:bg-blue-950">Log out</div>
           </div>
         </div>
-        <div className="h-screen w-5/6 rounded-r-md bg-sky-50 "></div>
+        {/* Main container */}
+        <div className="container w-5/6 rounded-r-md bg-sky-50 px-6 py-6 ">
+          {/* <div className=" container mx-6 flex rounded-2xl bg-white"></div> */}
+          <div className="rounded-3xl bg-white p-2 pl-6 ">Search</div>
+          <p className="p-4 pb-0  pl-6 pt-6 font-semibold text-blue-900 ">
+            Categories
+          </p>
+          <div className="flex flex-row gap-4 p-5">
+            <div className="rounded-lg bg-indigo-400 p-8 font-semibold text-white">
+              <FcImageFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />
+              Pictures
+            </div>
+            <div className="rounded-lg bg-teal-500 p-8 font-semibold text-white">
+              <FcDocument className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />{" "}
+              Documents
+            </div>
+            <div className="rounded-lg bg-pink-400 p-8 font-semibold text-white">
+              <FcVideoFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />{" "}
+              Videos
+            </div>
+            <div className="rounded-lg bg-blue-500 p-8 font-semibold text-white">
+              <FcAudioFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />
+              Audio
+            </div>
+          </div>
+          <p className="p-4 pb-0 pl-6 pt-6 font-semibold text-blue-900 ">
+            Files
+          </p>
+          <div className="flex flex-row gap-4 p-5">
+            <div className="rounded-lg bg-slate-200 p-8 px-10">+</div>
+          </div>
+          <p className="p-4 pb-0 pl-6 pt-6 font-semibold text-blue-900 ">
+            Recent Files
+          </p>
+        </div>
+        <div className=" container mx-6 flex w-80 rounded-2xl bg-white"></div>
       </main>
     </>
   );
