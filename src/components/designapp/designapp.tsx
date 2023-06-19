@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { BsFillPersonFill, BsPlusLg } from "react-icons/bs";
+import { BsFillPersonFill, BsPlusLg, BsStarFill } from "react-icons/bs";
 import {
   FcAudioFile,
   FcDocument,
@@ -25,11 +25,8 @@ export function DesignApp() {
       </Head>
 
       <main className="flex h-fit">
-        {/* <div className="bg-green-500 sm:bg-blue-500 md:bg-yellow-500 lg:bg-orange-500 xl:bg-purple-500">
-          TEST
-        </div> */}
-
         {/* Nav Bar */}
+
         <Nav>
           {}
 
@@ -40,46 +37,53 @@ export function DesignApp() {
             <p className="p-4 pb-0  pl-6 pt-6 text-xl font-semibold text-blue-900 ">
               Categories
             </p>
-            <div className="flex flex-row gap-4 p-5 ">
-              <div className="rounded-lg bg-indigo-500 px-8 py-6 font-semibold text-white">
-                <FcImageFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />
-                Pictures
+            <div className="flex flex-row gap-4 p-5">
+              <div className=" basis-1/4 flex-col rounded-lg bg-indigo-500 ">
+                <div className="flex">
+                  <FcImageFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />
+                  <BsStarFill className=" ml-12 mt-5 h-6 w-6 text-yellow-300" />
+                </div>
+                <p className="ml-4 font-semibold text-white">Pictures</p>
+                <p className="mb-6 ml-4 text-xs text-white">480 files</p>
               </div>
-              <div className="rounded-lg bg-cyan-600 px-8 py-6 font-semibold text-white">
-                <FcDocument className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />{" "}
-                Documents
+              <div className="basis-1/4 flex-col rounded-lg bg-cyan-600  ">
+                <FcDocument className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />{" "}
+                <p className="ml-4 font-semibold text-white">Documents</p>
+                <p className=" ml-4 text-xs text-white">190 files</p>
               </div>
-              <div className="rounded-lg bg-pink-400 px-8 py-6 font-semibold text-white">
-                <FcVideoFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />{" "}
-                Videos
+              <div className="basis-1/4 flex-col rounded-lg bg-pink-400  ">
+                <FcVideoFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />{" "}
+                <p className="ml-4 font-semibold text-white">Videos</p>
+                <p className=" ml-4 text-xs text-white">30 files</p>
               </div>
-              <div className="rounded-lg bg-blue-500 px-8 py-6 font-semibold text-white">
-                <FcAudioFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />
-                Audio
+              <div className="basis-1/4 flex-col rounded-lg bg-blue-500  ">
+                <FcAudioFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />
+                <p className="ml-4 font-semibold text-white">Audio</p>
+                <p className=" ml-4 text-xs text-white">80 files</p>
               </div>
             </div>
 
             <p className="p-4 pb-0 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
               Files
             </p>
-            <div className="flex flex-row gap-4 p-5">
-              <div className="rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
+            <div className="flex flex-row gap-4 p-5 text-center">
+              <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold  text-blue-800">
                 <MdOutlineWork className="mx-auto mb-2 h-6 w-6 text-violet-500" />{" "}
                 Work
                 <hr />
               </div>
-              <div className="rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
+              <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
                 <BsFillPersonFill className="mx-auto mb-2 h-6 w-6 text-cyan-500" />
                 Personal
                 <hr />
               </div>
-              <div className="rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
+              <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
                 <BiCabinet className="mx-auto mb-2 h-6 w-6 text-blue-600" />{" "}
                 Archive
                 <hr />
               </div>
-              <div className="rounded-lg bg-slate-100 px-8 py-6 ">
-                <BsPlusLg className="mx-auto mb-2 h-6 w-6 text-blue-600" />
+              <div className=" basis-1/4 flex-col rounded-lg bg-slate-100 px-8 py-6 ">
+                <BsPlusLg className="mx-auto my-auto mb-2 h-6 w-6 text-blue-600" />
               </div>
             </div>
 
