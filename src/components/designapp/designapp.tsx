@@ -13,7 +13,6 @@ import { MdOutlineWork } from "react-icons/md";
 import { BiCabinet } from "react-icons/bi";
 import Nav from "~/components/designapp/nav";
 import Searchbar from "~/components/designapp/searchbar";
-import Image from "next/image";
 
 export function DesignApp() {
   return (
