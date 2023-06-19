@@ -12,13 +12,14 @@ import {
   FcAudioFile,
   FcDocument,
   FcImageFile,
+  FcShare,
   FcVideoFile,
 } from "react-icons/fc";
 import { IoIosPeople } from "react-icons/io";
 import { ImUpload3 } from "react-icons/im";
 import { TbLogout, TbSettingsFilled } from "react-icons/tb";
 import { MdOutlineWork } from "react-icons/md";
-import { BiCabinet } from "react-icons/bi";
+import { BiCabinet, BiShareAlt } from "react-icons/bi";
 
 export function DesignApp() {
   return (
@@ -122,9 +123,25 @@ export function DesignApp() {
             </div>
           </div>
 
-          <p className="p-4 pb-0 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
+          <p className="p-4 pb-4 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
             Recent Files
           </p>
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-row rounded-lg bg-white p-2 ">
+              <FcImageFile className=" h-12 w-12 rounded-lg bg-indigo-500 p-2 " />
+              <p className="px-3 py-3">IMG_102000</p>
+              <p className=" px-14 py-3 text-sm text-stone-400">PNG file</p>
+              <p className=" px-8 py-3 text-sm text-stone-400">5 MB</p>
+              <p className=" px-20 py-1 text-2xl text-blue-500">...</p>
+            </div>
+            <div className="flex flex-row rounded-lg bg-white p-2 ">
+              <FcVideoFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2 " />
+              <p className="px-3 py-3">Startup pitch</p>
+              <p className=" px-14 py-3 text-sm text-stone-400">AVI file</p>
+              <p className=" px-8 py-3 text-sm text-stone-400">105 MB</p>
+              <p className=" px-16 py-1 text-2xl text-blue-500">...</p>
+            </div>
+          </div>
         </div>
 
         <div className=" container mx-6 flex w-96 rounded-2xl bg-white">
