@@ -1,6 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import { BsCloudArrowUpFill, BsPersonLock, BsStarFill } from "react-icons/bs";
+import {
+  BsCloudArrowUpFill,
+  BsFillPersonFill,
+  BsPersonCircle,
+  BsPersonLock,
+  BsPlusLg,
+  BsStarFill,
+} from "react-icons/bs";
 import {
   FcAudioFile,
   FcDocument,
@@ -8,6 +15,10 @@ import {
   FcVideoFile,
 } from "react-icons/fc";
 import { IoIosPeople } from "react-icons/io";
+import { ImUpload3 } from "react-icons/im";
+import { TbLogout, TbSettingsFilled } from "react-icons/tb";
+import { MdOutlineWork } from "react-icons/md";
+import { BiCabinet } from "react-icons/bi";
 
 export function DesignApp() {
   return (
@@ -23,7 +34,8 @@ export function DesignApp() {
           TEST
         </div> */}
 
-        <div className="w-48 rounded-l-md bg-blue-900 p-7">
+        {/* Nav Bar */}
+        <div className=" container relative w-48 rounded-l-2xl bg-blue-900 p-7">
           <div className="flex justify-center pb-5 pt-5">
             <Image
               height={100}
@@ -49,46 +61,99 @@ export function DesignApp() {
             <div className="flex gap-1 hover:bg-blue-950">
               <BsCloudArrowUpFill className="h-5 w-5" /> Upload files
             </div>
-            <div className="flex gap-1 hover:bg-blue-950">Settings</div>
-            <div className="flex gap-1 hover:bg-blue-950">Log out</div>
+            <div className="absolute bottom-20 flex gap-1 hover:bg-blue-950">
+              <TbSettingsFilled className="h-5 w-5" /> Settings
+            </div>
+            <div className=" absolute bottom-8 flex gap-1 align-bottom hover:bg-blue-950">
+              <TbLogout className="h-5 w-5" />
+              Log out
+            </div>
           </div>
         </div>
+
         {/* Main container */}
-        <div className="container w-5/6 rounded-r-md bg-sky-50 px-6 py-6 ">
-          {/* <div className=" container mx-6 flex rounded-2xl bg-white"></div> */}
-          <div className="rounded-3xl bg-white p-2 pl-6 ">Search</div>
-          <p className="p-4 pb-0  pl-6 pt-6 font-semibold text-blue-900 ">
+        <div className="container w-5/6 rounded-r-2xl bg-slate-200 px-6 py-6 ">
+          <div className="rounded-3xl bg-white p-2 pl-6 text-blue-200">
+            Search
+          </div>
+          <p className="p-4 pb-0  pl-6 pt-6 text-xl font-semibold text-blue-900 ">
             Categories
           </p>
           <div className="flex flex-row gap-4 p-5">
-            <div className="rounded-lg bg-indigo-400 p-8 font-semibold text-white">
+            <div className="rounded-lg bg-indigo-500 px-8 py-6 font-semibold text-white">
               <FcImageFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />
               Pictures
             </div>
-            <div className="rounded-lg bg-teal-500 p-8 font-semibold text-white">
+            <div className="rounded-lg bg-cyan-600 px-8 py-6 font-semibold text-white">
               <FcDocument className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />{" "}
               Documents
             </div>
-            <div className="rounded-lg bg-pink-400 p-8 font-semibold text-white">
+            <div className="rounded-lg bg-pink-400 px-8 py-6 font-semibold text-white">
               <FcVideoFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />{" "}
               Videos
             </div>
-            <div className="rounded-lg bg-blue-500 p-8 font-semibold text-white">
+            <div className="rounded-lg bg-blue-500 px-8 py-6 font-semibold text-white">
               <FcAudioFile className=" mx-auto mb-2 h-8 w-8 rounded-full bg-white p-1" />
               Audio
             </div>
           </div>
-          <p className="p-4 pb-0 pl-6 pt-6 font-semibold text-blue-900 ">
+
+          <p className="p-4 pb-0 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
             Files
           </p>
           <div className="flex flex-row gap-4 p-5">
-            <div className="rounded-lg bg-slate-200 p-8 px-10">+</div>
+            <div className="rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
+              <MdOutlineWork className="mx-auto mb-2 h-6 w-6 text-violet-500" />{" "}
+              Work
+              <hr />
+            </div>
+            <div className="rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
+              <BsFillPersonFill className="mx-auto mb-2 h-6 w-6 text-cyan-500" />
+              Personal
+              <hr />
+            </div>
+            <div className="rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
+              <BiCabinet className="mx-auto mb-2 h-6 w-6 text-blue-600" />{" "}
+              Archive
+              <hr />
+            </div>
+            <div className="rounded-lg bg-slate-100 px-8 py-6 ">
+              <BsPlusLg className="mx-auto mb-2 h-6 w-6 text-blue-600" />
+            </div>
           </div>
-          <p className="p-4 pb-0 pl-6 pt-6 font-semibold text-blue-900 ">
+
+          <p className="p-4 pb-0 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
             Recent Files
           </p>
         </div>
-        <div className=" container mx-6 flex w-80 rounded-2xl bg-white"></div>
+
+        <div className=" container mx-6 flex w-96 rounded-2xl bg-white">
+          <div className="mx-auto flex flex-col gap-4 p-5">
+            <div className=" mx-auto rounded-lg bg-slate-100 px-20 py-20 text-sm font-semibold text-blue-900">
+              {" "}
+              <ImUpload3 className=" mx-auto h-14 w-14 pb-2 text-blue-600" />{" "}
+              Add new files
+            </div>
+            <div className="flex flex-col gap-3 rounded-lg bg-slate-100 p-5 ">
+              <div className="flex flex-row gap-6">
+                <p className=" text-sm font-semibold text-blue-900">
+                  Your storage
+                </p>
+                <p className="text-xs font-semibold text-teal-500">100% left</p>
+              </div>
+              <div className=" flex gap-1 rounded-2xl bg-slate-300 p-1 "></div>
+            </div>
+            <div className="flex flex-col gap-6 rounded-lg bg-slate-100 p-14 ">
+              <p className="text-left text-sm font-semibold text-blue-900">
+                Your shared folders
+              </p>
+
+              <div className="mx-fit flex-wrap rounded-lg border-2 border-slate-300 p-3 text-slate-400">
+                + Add
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );
