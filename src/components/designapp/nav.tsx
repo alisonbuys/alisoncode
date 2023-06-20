@@ -9,13 +9,13 @@ export default function Nav(props: { children: ReactNode }) {
   return (
     <>
       <div className="flex h-fit">
-        <div className=" container relative w-72 justify-items-center rounded-l-2xl bg-blue-900">
+        <div className=" container relative w-64 justify-items-center rounded-l-2xl bg-blue-900">
           <div className="flex justify-center pb-5 pt-5">
             <Image
               height={100}
               width={100}
-              src={"/assets/images/profile.jpeg"}
-              className=" h-14 w-14 rounded-full border-2 border-white "
+              src={"/assets/images/a.png"}
+              className=" h-16 w-16 rounded-full border-2 border-white "
               alt={"logo"}
             />
           </div>
