@@ -36,13 +36,20 @@ export default function Nav(props: { children: ReactNode }) {
               Shared files
             </Link>
 
-            <div className="flex gap-1 p-2 px-7 hover:bg-blue-950 hover:font-semibold">
+            <Link
+              href={"/favorites"}
+              className="flex gap-1 p-2 px-7 hover:bg-blue-950 hover:font-semibold"
+            >
               <BsStarFill className="h-4 w-4" />
               Favorites
-            </div>
-            <div className="flex gap-1 p-2 px-7 hover:bg-blue-950 hover:font-semibold">
+            </Link>
+            <Link
+              href={"/uploaded"}
+              className="flex gap-1 p-2 px-7 hover:bg-blue-950 hover:font-semibold"
+            >
               <BsCloudArrowUpFill className="h-5 w-5" /> Upload files
-            </div>
+            </Link>
+
             <div className="absolute bottom-20 flex gap-1 p-2 px-7 hover:font-semibold">
               <TbSettingsFilled className="h-5 w-5" /> Settings
             </div>
