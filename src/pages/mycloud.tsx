@@ -90,19 +90,12 @@ export default function Mycloud() {
               Recent Files
             </p>
             <div className="flex flex-col gap-2">
-              <div className="flex flex-row rounded-lg bg-white p-2">
-                <FcImageFile className=" h-12 w-12 rounded-lg bg-indigo-500 p-2 " />
-                <p className="px-3 py-3">IMG_102000</p>
-                <p className=" px-14 py-3 text-sm text-stone-400">PNG file</p>
-                <p className=" px-8 py-3 text-sm text-stone-400">5 MB</p>
-                <p className=" px-20 py-1 text-2xl text-blue-500">...</p>
-              </div>
               <div className="flex flex-row rounded-lg bg-white p-2 ">
-                <FcVideoFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2 " />
-                <p className="px-3 py-3">Startup pitch</p>
-                <p className=" px-14 py-3 text-sm text-stone-400">AVI file</p>
-                <p className=" px-8 py-3 text-sm text-stone-400">105 MB</p>
-                <p className=" px-16 py-1 text-2xl text-blue-500">...</p>
+                <FcVideoFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2" />
+                <p className="px-3 ">Startup pitch</p>
+                <p className=" px-14  text-sm text-stone-400">AVI file</p>
+                <p className=" px-8  text-sm text-stone-400">105 MB</p>
+                <p className=" px-16  text-2xl text-blue-500">...</p>
               </div>
             </div>
           </Searchbar>
