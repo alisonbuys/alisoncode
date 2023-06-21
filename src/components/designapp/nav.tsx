@@ -21,7 +21,7 @@ export default function Nav(props: { children: ReactNode }) {
           </div>
           <div className="flex flex-col gap-7 py-5 text-base text-white">
             <Link
-              href={"/mycloud"}
+              href={"/projects/designapp"}
               className="flex gap-1 p-2 px-7 hover:bg-blue-950 hover:font-semibold"
             >
               <BsPersonLock className="h-5 w-5" />
