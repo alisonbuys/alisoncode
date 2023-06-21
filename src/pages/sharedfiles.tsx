@@ -44,34 +44,34 @@ export default function Sharedfiles() {
           Your shared files
         </p>
         <div className=" flex flex-row gap-4 p-5 ">
-          <div className=" flex basis-1/4 flex-col justify-center rounded-lg bg-white px-10 py-8   text-blue-900">
+          <div className=" flex basis-1/6 flex-col justify-center rounded-lg bg-white px-10 py-8   text-blue-900">
             <div className="border-2 border-white border-b-blue-500 pb-4">
               <p className="font-semibold">Keynote </p>
               <p>820 files</p>
             </div>
           </div>
 
-          <div className=" flex basis-1/4 flex-col justify-center rounded-lg bg-white px-10 py-8 text-blue-900">
+          <div className=" flex basis-1/6 flex-col justify-center rounded-lg bg-white px-10 py-8 text-blue-900">
             <div className="border-2 border-white border-b-pink-400 pb-4">
               <p className="font-semibold">Photos</p>
               <p>115 files</p>
             </div>
           </div>
 
-          <div className=" flex basis-1/4 flex-col justify-center rounded-lg bg-white px-10 py-8 text-blue-900">
+          <div className=" flex basis-1/6 flex-col justify-center rounded-lg bg-white px-10 py-8 text-blue-900">
             <div className="border-2 border-white border-b-violet-500 pb-4">
               <p className="font-semibold">Projects</p>
               <p>65 files</p>
             </div>
           </div>
 
-          <div className=" flex basis-1/4 flex-col justify-center rounded-lg bg-white px-10 py-8 text-blue-900">
+          <div className=" flex basis-1/6 flex-col justify-center rounded-lg bg-white px-10 py-8 text-blue-900">
             <div className="border-2 border-white border-b-cyan-500 pb-4">
               <p className="font-semibold">Memes</p>
               <p>21 files</p>
             </div>
           </div>
-          <div className=" flex basis-1/4 flex-col justify-center rounded-lg bg-slate-100 px-10 py-8 text-blue-900">
+          <div className=" flex basis-1/6 flex-col justify-center rounded-lg bg-slate-100 px-10 py-8 text-blue-900">
             <BsPlusLg className="mx-auto mb-2 h-6 w-6 text-blue-600" />
           </div>
         </div>
