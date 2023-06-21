@@ -14,6 +14,33 @@ import { BiCabinet } from "react-icons/bi";
 import Nav from "~/components/designapp/nav";
 import Searchbar from "~/components/designapp/searchbar";
 
+const tabledata = [
+  {
+    filename: "IMG_100000",
+    type: "PNG file",
+    size: "5 MB",
+    icon: <FcImageFile className=" h-12 w-12 rounded-lg bg-indigo-500 p-2 " />,
+  },
+  {
+    filename: "Startup Pitch",
+    type: "AVI file",
+    size: "105 MB",
+    icon: <FcVideoFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2 " />,
+  },
+  {
+    filename: "Freestyle beat",
+    type: "MP3 file",
+    size: "21 MB",
+    icon: <FcAudioFile className=" h-12 w-12 rounded-lg bg-blue-500 p-2 " />,
+  },
+  {
+    filename: "Work proposal",
+    type: "DOCx file",
+    size: "500 kb",
+    icon: <FcDocument className=" h-12 w-12 rounded-lg bg-cyan-500 p-2 " />,
+  },
+];
+
 export function DesignApp() {
   return (
     <>
@@ -89,38 +116,59 @@ export function DesignApp() {
             <p className="p-4 pb-4 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
               Recent Files
             </p>
-            <div className="flex flex-col gap-2">
-              <div className="flex flex-row rounded-lg bg-white p-2 ">
-                <FcVideoFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2" />
-                <p className="px-3 py-3">Startup pitch</p>
-                <p className=" px-14 py-3 text-sm text-stone-400">AVI file</p>
-                <p className=" px-8 py-3 text-sm text-stone-400">105 MB</p>
-                <p className=" px-16 py-1 text-2xl text-blue-500">...</p>
-              </div>
-            </div>
+            <table className="w-full  ">
+              {tabledata.map((row) => (
+                <tr key={row.filename} className="border-8 border-slate-200">
+                  <td className="w-2 rounded-l-3xl  bg-white p-2">
+                    {row.icon}
+                  </td>
+                  <td className="justify-items-start bg-white">
+                    {row.filename}
+                  </td>
+                  <td className="justify-items-start bg-white text-sm text-stone-400">
+                    {row.type}
+                  </td>
+                  <td className="justify-items-start rounded-r-3xl bg-white p-1 text-sm text-stone-400">
+                    {row.size}
+                  </td>
+                </tr>
+              ))}
+            </table>
           </Searchbar>
         </Nav>
 
         <div className=" container mx-6 flex w-96 rounded-2xl bg-white">
           <div className="mx-auto flex flex-col gap-4 p-5">
-            <div className=" mx-auto rounded-lg bg-slate-100 px-20 py-20 text-center text-sm font-semibold text-blue-900">
+            <div className=" mx-auto rounded-lg bg-slate-100 px-28 py-28 text-center text-sm font-semibold text-blue-900">
               {" "}
-              <ImUpload3 className="mx-auto flex h-14 w-14 pb-2 text-blue-600" />{" "}
+              <ImUpload3 className="mx-auto flex h-16 w-16 pb-2 text-blue-600" />{" "}
               Add new files
             </div>
             <div className="flex flex-col gap-3 rounded-lg bg-slate-100 p-5 ">
               <div className="flex flex-row gap-6">
-                <p className=" text-sm font-semibold text-blue-900">
-                  Your storage
+                <p className="  font-semibold text-blue-900">Your storage</p>
+                <p className="ml-20 mt-1 text-sm font-semibold text-teal-500">
+                  25% left
                 </p>
-                <p className="text-xs font-semibold text-teal-500">100% left</p>
               </div>
-              <div className=" flex gap-1 rounded-2xl bg-slate-300 p-1 "></div>
+              <p className=" text-blue-950">75 GB of 100 GB are used</p>
+              <div className=" flex gap-1 rounded-2xl bg-slate-300  ">
+                <div className=" flex rounded-2xl bg-blue-500 p-1 px-28"></div>
+              </div>
             </div>
-            <div className="flex flex-col gap-6 rounded-lg bg-slate-100 p-10  ">
+            <div className="flex flex-col gap-6 rounded-lg bg-slate-100 p-5  ">
               <p className="text-base font-semibold text-blue-900">
                 Your shared folders
               </p>
+              <div className=" rounded-lg  bg-cyan-200 p-3 text-blue-900">
+                Keynote Files
+              </div>
+              <div className=" rounded-lg  bg-indigo-200 p-3 text-blue-900">
+                Vacation photos
+              </div>
+              <div className=" rounded-lg  bg-pink-200 p-3 text-blue-900">
+                Project report
+              </div>
 
               <div className=" rounded-lg border-2 border-slate-300 p-3 text-slate-400">
                 + Add
