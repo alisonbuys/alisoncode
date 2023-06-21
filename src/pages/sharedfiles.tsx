@@ -3,6 +3,39 @@ import { FcImageFile } from "react-icons/fc";
 import Nav from "~/components/designapp/nav";
 import Searchbar from "~/components/designapp/searchbar";
 
+const tabledata = [
+  {
+    filename: "Keynote data",
+    type: "DOCx file",
+    size: "500 kb",
+    icon: <FcImageFile className=" h-12 w-12 rounded-lg bg-blue-500 p-2 " />,
+  },
+  {
+    filename: "IMG_Vacation_10",
+    type: "PNG file",
+    size: "1 MB",
+    icon: <FcImageFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2 " />,
+  },
+  {
+    filename: "Reel-video-vacay",
+    type: "AVI file",
+    size: "44 MB",
+    icon: <FcImageFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2 " />,
+  },
+  {
+    filename: "Meme-49",
+    type: "PNG file",
+    size: "2 MB",
+    icon: <FcImageFile className=" h-12 w-12 rounded-lg bg-cyan-500 p-2 " />,
+  },
+  {
+    filename: "Project proposal",
+    type: "DOCx file",
+    size: "450 kb",
+    icon: <FcImageFile className=" h-12 w-12 rounded-lg bg-cyan-500 p-2 " />,
+  },
+];
+
 export default function Sharedfiles() {
   return (
     <Nav>
@@ -46,43 +79,20 @@ export default function Sharedfiles() {
         <p className="p-4 pb-4  pl-6 pt-6 text-xl font-bold text-blue-900 ">
           Shared recently
         </p>
-        <div className="flex flex-col gap-2">
-          <div className="flex flex-row rounded-lg bg-white p-2 ">
-            <FcImageFile className=" h-12 w-12 rounded-lg bg-blue-500 p-2 " />
-            <p className="px-3 py-3">Keynote data</p>
-            <p className=" px-14 py-3 text-sm text-stone-400">DOC file</p>
-            <p className=" px-8 py-3 text-sm text-stone-400">505 kb</p>
-            <p className=" px-16  py-1 text-2xl text-blue-500">...</p>
-          </div>
-          <div className="flex flex-row rounded-lg bg-white p-2 ">
-            <FcImageFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2 " />
-            <p className="px-3 py-3">IMG_Vac_104</p>
-            <p className=" px-14 py-3 text-sm text-stone-400">PNG file</p>
-            <p className=" px-8 py-3 text-sm text-stone-400">101 kb</p>
-            <p className="  px-16 py-1 text-2xl text-blue-500">...</p>
-          </div>
-          <div className="flex flex-row rounded-lg bg-white p-2 ">
-            <FcImageFile className=" h-12 w-12 rounded-lg bg-pink-400 p-2 " />
-            <p className="px-3 py-3">Reel-vid-vaca</p>
-            <p className=" px-14 py-3 text-sm text-stone-400">AVI file</p>
-            <p className=" px-8 py-3 text-sm text-stone-400">104 MB</p>
-            <p className=" px-16 py-1 text-2xl text-blue-500">...</p>
-          </div>
-          <div className="flex flex-row rounded-lg bg-white p-2 ">
-            <FcImageFile className=" h-12 w-12 rounded-lg bg-cyan-500 p-2 " />
-            <p className="px-3 py-3">Meme-10002</p>
-            <p className=" px-14 py-3 text-sm text-stone-400">PNG file</p>
-            <p className=" px-8 py-3 text-sm text-stone-400">254 kb</p>
-            <p className=" px-16 py-1 text-2xl text-blue-500">...</p>
-          </div>
-          <div className="flex flex-row rounded-lg bg-white p-2 ">
-            <FcImageFile className=" h-12 w-12 rounded-lg bg-violet-500 p-2 " />
-            <p className="px-3 py-3">Projects prop</p>
-            <p className=" px-14 py-3 text-sm text-stone-400">DOC file</p>
-            <p className=" px-8 py-3 text-sm text-stone-400">450 kb</p>
-            <p className=" px-16 py-1 text-2xl text-blue-500">...</p>
-          </div>
-        </div>
+        <table className=" w-3/4 ">
+          {tabledata.map((row) => (
+            <tr key={row.filename} className="border-8 border-slate-200">
+              <td className="w-2 rounded-l-3xl  bg-white p-2">{row.icon}</td>
+              <td className=" bg-white pl-2">{row.filename}</td>
+              <td className="bg-white text-center text-sm text-stone-400">
+                {row.type}
+              </td>
+              <td className="rounded-r-3xl bg-white p-1 text-center text-sm text-stone-400">
+                {row.size}
+              </td>
+            </tr>
+          ))}
+        </table>
       </Searchbar>
     </Nav>
   );
