@@ -5,7 +5,7 @@ import { FcHome, FcFolder, FcBusinessContact } from "react-icons/fc";
 export function AppLayout(props: { children: ReactNode }) {
   return (
     <>
-      <div className="container mx-auto mt-5 flex justify-center gap-4 rounded-lg bg-purple-200 p-5">
+      <div className="container mx-auto mt-5 flex justify-center gap-4 rounded-lg bg-purple-300 p-5">
         <Link
           href="/"
           className="flex flex-row items-center gap-1 rounded bg-purple-100 p-1 font-serif font-bold 

@@ -15,11 +15,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="h-screen bg-gradient-to-b from-white via-purple-200 to-pink-200">
-          <div className="flex justify-center p-6 pl-10 font-serif text-3xl">
-            Hi, my name is Alison Buys ...
-          </div>
-          <div className="flex h-20 justify-center gap-1 p-4">
+        <div className="h-screen bg-gradient-to-b from-purple-200 via-purple-200 to-pink-200">
+          <div className="flex h-20  gap-1 p-4">
             <Image
               height={100}
               width={100}
@@ -31,33 +28,37 @@ const Home: NextPage = () => {
               Web Developer
             </div>
           </div>
-          {/* <div className="flex justify-center pb-5 pt-5">
-            <Image
-              height={800}
-              width={900}
-              src={"/assets/images/code.webp"}
-              className="rounded-xl shadow-xl shadow-indigo-950"
-              alt={"code picture"}
-            />
-          </div> */}
-          <div className="">
-            <div className="flex justify-center pb-4 pt-4">
-              <Image
-                height={200}
-                width={200}
-                src={"/assets/images/photo.jpg"}
-                className="rounded-full border-4 border-purple-500 shadow-xl"
-                alt={"a picture of myself"}
-              />
+          <div className=" container mx-auto flex flex-row  px-56 py-20">
+            <div className=" mr-5 flex border-4 border-purple-200 border-r-purple-500 p-6 pl-10 ">
+              <p className="mt-40 font-serif text-3xl">
+                Hi...
+                <br />
+                my name is Alison Buys ...
+              </p>
             </div>
 
-            <div className="flex justify-center pt-5 text-center font-serif text-lg">
-              Outgoing and ambitious high school graduate.
-              <br /> Problem solver eager to prove my value and talent.
-              <br /> Desire to learn and use my programing skills to work as an
-              software developer.
-              <br /> Motivated to advance and expand my skill set through
-              targeted mentorship and challenging projects.
+            <div className="container flex w-80  flex-col rounded-lg bg-purple-100 ">
+              <div className="px-5 py-5">
+                <Image
+                  height={200}
+                  width={300}
+                  src={"/assets/images/photo.jpg"}
+                  className=" rounded-lg pb-1 "
+                  alt={"sunset"}
+                />
+                <p className="font-serif">
+                  {" "}
+                  Outgoing and ambitious high school graduate.
+                  <br /> Problem solver eager to prove my value and talent.
+                  <br /> Desire to learn and use my programing skills to work as
+                  an software developer.
+                  <br /> Motivated to advance and expand my skill set through
+                  targeted mentorship and challenging projects.
+                </p>
+                <p className="pt-1 text-xs text-purple-500">
+                  Mossel Bay, Western Cape
+                </p>
+              </div>
             </div>
           </div>
         </div>
