@@ -117,13 +117,13 @@ export function DesignApp() {
                 <p className="p-4 pb-4 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
                   Recent Files
                 </p>
-                <table className="w-full  ">
+                <table className="w-full py-5">
                   {tabledata.map((row) => (
                     <tr
                       key={row.filename}
                       className="border-8 border-slate-200"
                     >
-                      <td className="w-2 rounded-l-3xl  bg-white p-2">
+                      <td className="w-2 rounded-l-3xl  bg-white p-2 ">
                         {row.icon}
                       </td>
                       <td className="justify-items-start bg-white">
