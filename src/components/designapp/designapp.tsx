@@ -57,125 +57,133 @@ export function DesignApp() {
           {}
 
           {/* Main container */}
-
           <Searchbar>
             {}
-            <p className="p-4 pb-0  pl-6 pt-6 text-xl font-semibold text-blue-900 ">
-              Categories
-            </p>
-            <div className="flex flex-row gap-4 p-5">
-              <div className=" basis-1/4 flex-col rounded-lg bg-indigo-500 ">
-                <div className="flex">
-                  <FcImageFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />
-                  <BsStarFill className=" ml-12 mt-5 h-6 w-6 text-yellow-300" />
+            <div className="flex flex-row">
+              <div className="container ">
+                <p className="p-4 pb-0  pl-6 pt-6 text-xl font-semibold text-blue-900 ">
+                  Categories
+                </p>
+                <div className="flex flex-row gap-4 p-5">
+                  <div className=" basis-1/4 flex-col rounded-lg bg-indigo-500 ">
+                    <div className="flex">
+                      <FcImageFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />
+                      <BsStarFill className=" ml-12 mr-3 mt-5 h-6 w-6 text-yellow-300" />
+                    </div>
+                    <p className="ml-4 font-semibold text-white">Pictures</p>
+                    <p className="mb-6 ml-4 text-xs text-white">480 files</p>
+                  </div>
+                  <div className="basis-1/3 flex-col rounded-lg bg-cyan-600  ">
+                    <FcDocument className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />{" "}
+                    <p className="ml-4 font-semibold text-white">Documents</p>
+                    <p className=" ml-4 text-xs text-white">190 files</p>
+                  </div>
+                  <div className="basis-1/4 flex-col rounded-lg bg-pink-400  ">
+                    <FcVideoFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />{" "}
+                    <p className="ml-4 font-semibold text-white">Videos</p>
+                    <p className=" ml-4 text-xs text-white">30 files</p>
+                  </div>
+                  <div className="basis-1/4 flex-col rounded-lg bg-blue-500  ">
+                    <FcAudioFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />
+                    <p className="ml-4 font-semibold text-white">Audio</p>
+                    <p className=" ml-4 text-xs text-white">80 files</p>
+                  </div>
                 </div>
-                <p className="ml-4 font-semibold text-white">Pictures</p>
-                <p className="mb-6 ml-4 text-xs text-white">480 files</p>
+
+                <p className="p-4 pb-0 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
+                  Files
+                </p>
+                <div className="flex flex-row gap-4 p-5 text-center">
+                  <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold  text-blue-800">
+                    <MdOutlineWork className="mx-auto mb-2 h-6 w-6 text-violet-500" />{" "}
+                    Work
+                    <hr />
+                  </div>
+                  <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
+                    <BsFillPersonFill className="mx-auto mb-2 h-6 w-6 text-cyan-500" />
+                    Personal
+                    <hr />
+                  </div>
+                  <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
+                    <BiCabinet className="mx-auto mb-2 h-6 w-6 text-blue-600" />{" "}
+                    Archive
+                    <hr />
+                  </div>
+                  <div className=" basis-1/4 flex-col rounded-lg bg-slate-100 px-8 py-6 ">
+                    <BsPlusLg className="mx-auto my-auto mb-2 h-6 w-6 text-blue-600" />
+                  </div>
+                </div>
+
+                <p className="p-4 pb-4 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
+                  Recent Files
+                </p>
+                <table className="w-full  ">
+                  {tabledata.map((row) => (
+                    <tr
+                      key={row.filename}
+                      className="border-8 border-slate-200"
+                    >
+                      <td className="w-2 rounded-l-3xl  bg-white p-2">
+                        {row.icon}
+                      </td>
+                      <td className="justify-items-start bg-white">
+                        {row.filename}
+                      </td>
+                      <td className="justify-items-start bg-white text-sm text-stone-400">
+                        {row.type}
+                      </td>
+                      <td className="justify-items-start rounded-r-3xl bg-white p-1 text-sm text-stone-400">
+                        {row.size}
+                      </td>
+                    </tr>
+                  ))}
+                </table>
               </div>
-              <div className="basis-1/4 flex-col rounded-lg bg-cyan-600  ">
-                <FcDocument className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />{" "}
-                <p className="ml-4 font-semibold text-white">Documents</p>
-                <p className=" ml-4 text-xs text-white">190 files</p>
-              </div>
-              <div className="basis-1/4 flex-col rounded-lg bg-pink-400  ">
-                <FcVideoFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />{" "}
-                <p className="ml-4 font-semibold text-white">Videos</p>
-                <p className=" ml-4 text-xs text-white">30 files</p>
-              </div>
-              <div className="basis-1/4 flex-col rounded-lg bg-blue-500  ">
-                <FcAudioFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />
-                <p className="ml-4 font-semibold text-white">Audio</p>
-                <p className=" ml-4 text-xs text-white">80 files</p>
+
+              <div className="flex flex-row">
+                <div className=" container mx-6 ml-32 mt-4 flex w-96 rounded-2xl bg-white">
+                  <div className="mx-auto flex flex-col gap-4 p-5">
+                    <div className=" mx-auto rounded-lg bg-slate-100 px-28 py-20 text-center text-sm font-semibold text-blue-900">
+                      {" "}
+                      <ImUpload3 className="mx-auto flex h-16 w-16 pb-2 text-blue-600" />{" "}
+                      Add new files
+                    </div>
+                    <div className="flex flex-col gap-3 rounded-lg bg-slate-100 p-5 ">
+                      <div className="flex flex-row gap-6">
+                        <p className="  font-semibold text-blue-900">
+                          Your storage
+                        </p>
+                        <p className="ml-20 mt-1 text-sm font-semibold text-teal-500">
+                          25% left
+                        </p>
+                      </div>
+                      <p className=" text-blue-950">75 GB of 100 GB are used</p>
+                      <div className=" flex gap-1 rounded-2xl bg-slate-300  ">
+                        <div className=" flex rounded-2xl bg-blue-500 p-1 px-28"></div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-6 rounded-lg bg-slate-100 p-5  ">
+                      <p className="text-base font-semibold text-blue-900">
+                        Your shared folders
+                      </p>
+                      <div className=" rounded-lg  bg-cyan-200 p-3 text-blue-900">
+                        Keynote Files
+                      </div>
+
+                      <div className=" rounded-lg  bg-pink-200 p-3 text-blue-900">
+                        Project report
+                      </div>
+
+                      <div className=" rounded-lg border-2 border-slate-300 p-3 text-slate-400">
+                        + Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <p className="p-4 pb-0 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
-              Files
-            </p>
-            <div className="flex flex-row gap-4 p-5 text-center">
-              <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold  text-blue-800">
-                <MdOutlineWork className="mx-auto mb-2 h-6 w-6 text-violet-500" />{" "}
-                Work
-                <hr />
-              </div>
-              <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
-                <BsFillPersonFill className="mx-auto mb-2 h-6 w-6 text-cyan-500" />
-                Personal
-                <hr />
-              </div>
-              <div className=" basis-1/4 flex-col rounded-lg bg-slate-50 px-8 py-6 font-semibold text-blue-800">
-                <BiCabinet className="mx-auto mb-2 h-6 w-6 text-blue-600" />{" "}
-                Archive
-                <hr />
-              </div>
-              <div className=" basis-1/4 flex-col rounded-lg bg-slate-100 px-8 py-6 ">
-                <BsPlusLg className="mx-auto my-auto mb-2 h-6 w-6 text-blue-600" />
-              </div>
-            </div>
-
-            <p className="p-4 pb-4 pl-6 pt-6 text-xl font-semibold text-blue-900 ">
-              Recent Files
-            </p>
-            <table className="w-full  ">
-              {tabledata.map((row) => (
-                <tr key={row.filename} className="border-8 border-slate-200">
-                  <td className="w-2 rounded-l-3xl  bg-white p-2">
-                    {row.icon}
-                  </td>
-                  <td className="justify-items-start bg-white">
-                    {row.filename}
-                  </td>
-                  <td className="justify-items-start bg-white text-sm text-stone-400">
-                    {row.type}
-                  </td>
-                  <td className="justify-items-start rounded-r-3xl bg-white p-1 text-sm text-stone-400">
-                    {row.size}
-                  </td>
-                </tr>
-              ))}
-            </table>
           </Searchbar>
         </Nav>
-
-        <div className=" container mx-6 flex w-96 rounded-2xl bg-white">
-          <div className="mx-auto flex flex-col gap-4 p-5">
-            <div className=" mx-auto rounded-lg bg-slate-100 px-28 py-28 text-center text-sm font-semibold text-blue-900">
-              {" "}
-              <ImUpload3 className="mx-auto flex h-16 w-16 pb-2 text-blue-600" />{" "}
-              Add new files
-            </div>
-            <div className="flex flex-col gap-3 rounded-lg bg-slate-100 p-5 ">
-              <div className="flex flex-row gap-6">
-                <p className="  font-semibold text-blue-900">Your storage</p>
-                <p className="ml-20 mt-1 text-sm font-semibold text-teal-500">
-                  25% left
-                </p>
-              </div>
-              <p className=" text-blue-950">75 GB of 100 GB are used</p>
-              <div className=" flex gap-1 rounded-2xl bg-slate-300  ">
-                <div className=" flex rounded-2xl bg-blue-500 p-1 px-28"></div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-6 rounded-lg bg-slate-100 p-5  ">
-              <p className="text-base font-semibold text-blue-900">
-                Your shared folders
-              </p>
-              <div className=" rounded-lg  bg-cyan-200 p-3 text-blue-900">
-                Keynote Files
-              </div>
-              <div className=" rounded-lg  bg-indigo-200 p-3 text-blue-900">
-                Vacation photos
-              </div>
-              <div className=" rounded-lg  bg-pink-200 p-3 text-blue-900">
-                Project report
-              </div>
-
-              <div className=" rounded-lg border-2 border-slate-300 p-3 text-slate-400">
-                + Add
-              </div>
-            </div>
-          </div>
-        </div>
       </main>
     </>
   );
