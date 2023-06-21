@@ -63,7 +63,7 @@ export default function Nav(props: { children: ReactNode }) {
         <div className="container w-5/6 rounded-r-2xl bg-slate-200 px-6 py-6 ">
           {props.children}
           <div className="mt-7 text-right text-sm text-slate-400">
-            A simple App Design clone, built with React.
+            A simple App Design clone built with React.
           </div>
         </div>
       </div>
