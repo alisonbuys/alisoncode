@@ -57,6 +57,7 @@ export function DesignApp() {
           {}
 
           {/* Main container */}
+
           <Searchbar>
             {}
             <div className="flex flex-row">
