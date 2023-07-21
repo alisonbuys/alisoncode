@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { IoIosSend } from "react-icons/io";
 
 // import { api } from "~/utils/api";
 
@@ -15,52 +16,27 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="h-screen bg-gradient-to-b from-purple-200 via-purple-200 to-pink-200">
-          <div className="flex h-20  gap-1 p-4">
-            <Image
-              height={100}
-              width={100}
-              src={"/assets/images/logo.png"}
-              className="h-14 w-14 rounded-xl pb-1 shadow-xl "
-              alt={"logo"}
-            />
-            <div className="text-md border-l border-purple-700 pl-2 pt-2 font-mono">
-              Web Developer
-            </div>
+      <div className="h-screen bg-purple-100">
+          <div className=" container justify-center mx-auto flex flex-row ">
+          <div className="container pl-40 py-40 flex-col">
+          <div className=" text-5xl font-medium pb-5">Hello, I&apos;m Alison</div>
+          <div>Outgoing and ambitious high school graduate.
+            <br/>Desire to learn and use my creativity to be a web designer.</div>
+            <div className="p-3 bg-gradient-to-r from-indigo-500 to-indigo-300 w-36 rounded-lg text-white mt-5 flex">Contact Me
+            <IoIosSend className="ml-2 h-5 w-5 font-medium"/></div>
           </div>
-          <div className=" container mx-auto flex flex-row  px-56 py-20">
-            <div className=" mr-5 flex border-4 border-purple-200 border-r-purple-500 p-6 pl-10 ">
-              <p className="mt-40 font-serif text-3xl">
-                Hi...
-                <br />
-                my name is Alison Buys ...
-              </p>
-            </div>
-
-            <div className="container flex w-80  flex-col rounded-lg bg-purple-100 ">
-              <div className="px-5 py-5">
-                <Image
+          <div className="container py-32">
+          <Image
                   height={200}
                   width={300}
-                  src={"/assets/images/photo.jpg"}
-                  className=" rounded-lg pb-1 "
-                  alt={"sunset"}
+                  src={"/assets/images/pfp.png"}
+                  className=" "
+                  alt={"AI Picture of Alison"}
                 />
-                <p className="font-serif">
-                  {" "}
-                  Outgoing and ambitious high school graduate.
-                  <br /> Problem solver eager to prove my value and talent.
-                  <br /> Desire to learn and use my programing skills to work as
-                  an software developer.
-                  <br /> Motivated to advance and expand my skill set through
-                  targeted mentorship and challenging projects.
-                </p>
-                <p className="pt-1 text-xs text-purple-500">
-                  Mossel Bay, Western Cape
-                </p>
-              </div>
-            </div>
           </div>
+          </div>
+
+
         </div>
       </main>
     </>

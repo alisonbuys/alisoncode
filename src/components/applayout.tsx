@@ -1,39 +1,53 @@
 import Link from "next/link";
 import { type ReactNode } from "react";
 import { FcHome, FcFolder, FcBusinessContact } from "react-icons/fc";
+import Image from "next/image";
+import {BsMoonStarsFill} from "react-icons/bs"
 
 export function AppLayout(props: { children: ReactNode }) {
   return (
     <>
-      <div className="container mx-auto mt-5 flex justify-center gap-4 rounded-lg bg-purple-300 p-5">
-        <Link
-          href="/"
-          className="flex flex-row items-center gap-1 rounded bg-purple-100 p-1 font-serif font-bold 
-          transition delay-150 duration-300  ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white"
-        >
-          <FcHome />
-          Home
-        </Link>
-
-        <Link
-          href="/projects"
-          className=" flex flex-row items-center gap-1 rounded bg-purple-100 p-1  font-serif font-bold  
-          transition delay-150 duration-300  ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white"
-        >
-          <FcFolder />
-          Projects
-        </Link>
-        <Link
-          href="/contact"
-          className="flex flex-row items-center gap-1 rounded bg-purple-100 p-1  font-serif font-bold  
-          transition delay-150 duration-300  ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white"
-        >
-          <FcBusinessContact />
-          Contact
-        </Link>
+      <div className="container flex max-w-none bg-purple-100 p-3 ">
+        <div className=" container justify-start">
+      <Image
+        className="h-10 w-auto"
+        src="/assets/images/logo3.png"
+        alt={"logo"}
+        width={200 * 4}
+        height={200 * 4}
+      />
       </div>
+<div className="container flex gap-2 justify-end text-right">
 
-      <div className="font-s container m-5 mx-auto rounded-lg bg-neutral-100 p-5">
+      <Link 
+      href={"/"}
+      className="p-3 text-sm font-semibold hover:text-indigo-800"
+      >
+        Home
+        </Link>
+
+
+      <Link 
+      href={"/projects"}
+      className="p-3 text-sm font-semibold hover:text-indigo-800"
+      >
+        Projects
+        </Link>
+
+
+      <Link 
+      href={"/contact"}
+      className="p-3 text-sm font-semibold hover:text-indigo-800"
+      >
+        Contact Me
+        </Link>
+
+      <BsMoonStarsFill className="mt-3 ml-3 h-5 text-indigo-800"/>
+      </div>
+    
+    </div>
+  
+      <div className="">
         {props.children}
       </div>
     </>
