@@ -107,9 +107,9 @@ function ProjectThumbnailLinks(props: {
     <Link href={props.link} className="">
      <div className="container flex basis-1/5 flex-col rounded-lg bg-white">
      <div className="px-2 py-2 pb-1">
-        <h3 className="font-serif text-purple-800">{props.name}</h3>
+        <h3 className="font-serif text-blue-900">{props.name}</h3>
 
-        <div className="font-serif pt-1 text-xs text-purple-500">{props.description}</div>
+        <div className="font-serif pt-1 text-xs text-blue-500">{props.description}</div>
       </div>
       </div>
     </Link>
