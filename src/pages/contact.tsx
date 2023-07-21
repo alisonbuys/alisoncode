@@ -9,12 +9,14 @@ import { BsPhone } from "react-icons/bs";
 
 export default function ContactPage() {
   return (
+    <>
+    <div className="h-screen bg-purple-100">
     <div className="py-10 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="flex font-serif text-3xl tracking-tight text-gray-900">
+          <div className="flex font-serif text-3xl tracking-tight text-gray-900">
             Contact me
-          </h2>
+          </div>
           <p className="mt-6 font-serif text-lg leading-8 text-gray-600">
             You can contact me on any of the following platforms below:
           </p>
@@ -79,5 +81,7 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+    </div>
+    </>
   );
 }
