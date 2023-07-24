@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     <div className="h-screen bg-purple-100">
       <div className="p-6 text-center font-serif text-3xl">Projects</div>
       {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
+      <div className="container m-1 w-96 mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -24,7 +24,7 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
+      <div className="container m-1 w-96 mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
+      <div className="container m-1 w-96 mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
+      <div className="container m-1 w-96 mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -75,7 +75,7 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
+      <div className="container m-1 w-96 mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
