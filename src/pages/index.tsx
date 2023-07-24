@@ -17,9 +17,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="h-screen bg-purple-100">
+        <div className="h-max bg-purple-100">
           <div className=" container mx-auto flex flex-row justify-center ">
-            <div className="container flex-col py-40 pl-40">
+            <div className="container flex-col py-5 px-10 sm:py-40 sm:mx-auto md:px-40">
               <div className=" pb-5 text-5xl font-medium">
                 Hello, I&apos;m Alison
               </div>
