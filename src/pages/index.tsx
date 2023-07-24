@@ -32,10 +32,10 @@ const Home: NextPage = () => {
               <Link
                 type="button"
                 href="/contact"
-                className="... mt-5 flex w-36 rounded-lg bg-gradient-to-r from-indigo-500 to-indigo-300 p-3 
-text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+                className="... mt-5 flex w-32 rounded-lg bg-gradient-to-r from-indigo-500 to-indigo-300 p-3 
+text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 text-xs"
               >
-                Contact Me
+                Contact me
                 <IoIosSend className="ml-2 h-5 w-5 font-medium" />
               </Link>
             </div>
