@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { IoIosSend } from "react-icons/io";
 
 // import { api } from "~/utils/api";
@@ -21,10 +22,22 @@ const Home: NextPage = () => {
           <div className="container pl-40 py-40 flex-col">
           <div className=" text-5xl font-medium pb-5">Hello, I&apos;m Alison</div>
           <div>Outgoing and ambitious high school graduate.
-            <br/>Desire to learn and use my creativity to be a web designer.</div>
-            <div className="p-3 bg-gradient-to-r from-indigo-500 to-indigo-300 w-36 rounded-lg text-white mt-5 flex">Contact Me
-            <IoIosSend className="ml-2 h-5 w-5 font-medium"/></div>
+            <br/>Desire to learn and use my creativity to be a web developer.</div>
+
+<Link
+type="button"
+href="/contact"
+className="p-3 bg-gradient-to-r from-indigo-500 to-indigo-300 w-36 rounded-lg text-white mt-5 flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+Contact Me
+
+<IoIosSend className="ml-2 h-5 w-5 font-medium"/>
+</Link>
+          
           </div>
+          
+          
+          
+          
           <div className="container py-32">
           <Image
                   height={200}

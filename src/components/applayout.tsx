@@ -7,11 +7,11 @@ import {BsMoonStarsFill} from "react-icons/bs"
 export function AppLayout(props: { children: ReactNode }) {
   return (
     <>
-      <div className="container flex max-w-none bg-purple-100 p-3 ">
+      <div className="container flex mx-auto bg-purple-100 p-3 ">
         <div className=" container justify-start">
       <Image
         className="h-10 w-auto"
-        src="/assets/images/logo3.png"
+        src="/assets/images/logo5.png"
         alt={"logo"}
         width={200 * 4}
         height={200 * 4}
@@ -39,7 +39,7 @@ export function AppLayout(props: { children: ReactNode }) {
       href={"/contact"}
       className="p-3 text-sm font-semibold hover:text-indigo-800"
       >
-        Contact Me
+        Contact
         </Link>
 
       <BsMoonStarsFill className="mt-3 ml-3 h-5 text-indigo-800"/>
@@ -47,7 +47,7 @@ export function AppLayout(props: { children: ReactNode }) {
     
     </div>
   
-      <div className="">
+      <div className="container mx-auto bg-purple-200 p-5">
         {props.children}
       </div>
     </>
