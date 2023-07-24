@@ -20,26 +20,26 @@ export function AppLayout(props: { children: ReactNode }) {
         <div className="container flex justify-end gap-2 text-right">
           <Link
             href={"/"}
-            className="p-3 text-sm font-semibold hover:text-indigo-800"
+            className="p-3 text-sm font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
           >
             Home
           </Link>
 
           <Link
             href={"/projects"}
-            className="p-3 text-sm font-semibold hover:text-indigo-800"
+            className="p-3 text-sm font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
           >
             Projects
           </Link>
 
           <Link
             href={"/contact"}
-            className="p-3 text-sm font-semibold hover:text-indigo-800"
+            className="p-3 text-sm font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
           >
             Contact
           </Link>
 
-          <BsMoonStarsFill className="ml-3 mt-3 h-5 text-indigo-800" />
+          <BsMoonStarsFill className="ml-3 mt-3 h-5 text-indigo-800 sm:text-xs md:text-sm sm:h-3" />
         </div>
       </div>
 
