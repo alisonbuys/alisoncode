@@ -7,13 +7,13 @@ export default function ProjectsPage() {
     <div className="h-screen bg-purple-100">
       <div className="p-6 text-center font-serif text-3xl">Projects</div>
       {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 p-1">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
             src={"/assets/images/msgapp.png"}
-            className="rounded-lg pb-1 "
+            className="rounded-lg  "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
@@ -24,13 +24,13 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 p-1">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
             src={"/assets/images/todo.png"}
-            className="rounded-lg pb-1 "
+            className="rounded-lg  "
             alt={"projects"}
           />
 
@@ -41,13 +41,13 @@ export default function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 p-1">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
             src={"/assets/images/pyramid.png"}
-            className="rounded-lg pb-1 "
+            className="rounded-lg  "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
@@ -58,13 +58,13 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 p-1">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
             src={"/assets/images/3dpyramid.png"}
-            className="rounded-lg pb-1 "
+            className="rounded-lg  "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
@@ -75,13 +75,13 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 p-1">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 ">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
             src={"/assets/images/appdesign.png"}
-            className="rounded-lg pb-1 "
+            className="rounded-lg  "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
