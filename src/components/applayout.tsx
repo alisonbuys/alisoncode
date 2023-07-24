@@ -20,21 +20,21 @@ export function AppLayout(props: { children: ReactNode }) {
         <div className="container flex justify-end gap-2 text-right">
           <Link
             href={"/"}
-            className="p-3 text-sm font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
+            className="p-3 text-xxs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
           >
             Home
           </Link>
 
           <Link
             href={"/projects"}
-            className="p-3 text-sm font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
+            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
           >
             Projects
           </Link>
 
           <Link
             href={"/contact"}
-            className="p-3 text-sm font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
+            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
           >
             Contact
           </Link>
