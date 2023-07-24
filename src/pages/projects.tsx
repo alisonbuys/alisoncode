@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     <div className="h-screen bg-purple-100">
       <div className="p-6 text-center font-serif text-3xl">Projects</div>
       {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -24,7 +24,7 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -75,7 +75,7 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 ">
+      <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -102,7 +102,7 @@ function ProjectThumbnailLinks(props: {
 }) {
   return (
     <Link href={props.link} className="">
-      <div className=" container mx-1 my-2 flex flex-col rounded-lg bg-purple-200 p-4">
+      <div className=" container mx-1 my-2 flex flex-col rounded-lg p-4">
         <h3 className="font-serif text-purple-900">{props.name}</h3>
 
         <div className="pt-1 font-serif text-xs text-black">
