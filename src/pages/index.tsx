@@ -17,39 +17,39 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-      <div className="h-screen bg-purple-100">
-          <div className=" container justify-center mx-auto flex flex-row ">
-          <div className="container pl-40 py-40 flex-col">
-          <div className=" text-5xl font-medium pb-5">Hello, I&apos;m Alison</div>
-          <div>Outgoing and ambitious high school graduate.
-            <br/>Desire to learn and use my creativity to be a web developer.</div>
+        <div className="h-screen bg-purple-100">
+          <div className=" container mx-auto flex flex-row justify-center ">
+            <div className="container flex-col py-40 pl-40">
+              <div className=" pb-5 text-5xl font-medium">
+                Hello, I&apos;m Alison
+              </div>
+              <div>
+                Outgoing and ambitious high school graduate.
+                <br />
+                Desire to learn and use my creativity to be a web developer.
+              </div>
 
-<Link
-type="button"
-href="/contact"
-className="p-3 bg-gradient-to-r from-indigo-500 to-indigo-300 w-36 rounded-lg text-white mt-5 flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
-Contact Me
+              <Link
+                type="button"
+                href="/contact"
+                className="... mt-5 flex w-36 rounded-lg bg-gradient-to-r from-indigo-500 to-indigo-300 p-3 
+text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              >
+                Contact Me
+                <IoIosSend className="ml-2 h-5 w-5 font-medium" />
+              </Link>
+            </div>
 
-<IoIosSend className="ml-2 h-5 w-5 font-medium"/>
-</Link>
-          
+            <div className="container py-32">
+              <Image
+                height={200}
+                width={300}
+                src={"/assets/images/pfp.png"}
+                className=" "
+                alt={"AI Picture of Alison"}
+              />
+            </div>
           </div>
-          
-          
-          
-          
-          <div className="container py-32">
-          <Image
-                  height={200}
-                  width={300}
-                  src={"/assets/images/pfp.png"}
-                  className=" "
-                  alt={"AI Picture of Alison"}
-                />
-          </div>
-          </div>
-
-
         </div>
       </main>
     </>
