@@ -20,21 +20,21 @@ export function AppLayout(props: { children: ReactNode }) {
         <div className="container flex justify-end gap-1 text-right">
           <Link
             href={"/"}
-            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
+            className="py-3 px-1 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
           >
             Home
           </Link>
 
           <Link
             href={"/projects"}
-            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
+            className="py-3 px-1 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
           >
             Projects
           </Link>
 
           <Link
             href={"/contact"}
-            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
+            className="py-3 px-1 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
           >
             Contact
           </Link>
@@ -43,7 +43,7 @@ export function AppLayout(props: { children: ReactNode }) {
         </div>
       </div>
 
-      <div className="container mx-auto bg-purple-200 p-5 h-max">
+      <div className="container mx-auto bg-purple-200 p-5 h-auto">
         {props.children}
       </div>
     </>
