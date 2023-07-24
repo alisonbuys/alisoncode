@@ -17,7 +17,7 @@ export function AppLayout(props: { children: ReactNode }) {
             height={200 * 4}
           />
         </div>
-        <div className="container flex justify-end gap-2 text-right">
+        <div className="container flex justify-end gap-1 text-right">
           <Link
             href={"/"}
             className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
