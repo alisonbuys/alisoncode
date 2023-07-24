@@ -10,7 +10,7 @@ export function AppLayout(props: { children: ReactNode }) {
       <div className="container mx-auto flex bg-purple-100 p-3 ">
         <div className=" container justify-start">
           <Image
-            className="h-10 w-auto"
+            className="h-8 w-auto"
             src="/assets/images/logo5.png"
             alt={"logo"}
             width={200 * 4}
@@ -20,30 +20,30 @@ export function AppLayout(props: { children: ReactNode }) {
         <div className="container flex justify-end gap-2 text-right">
           <Link
             href={"/"}
-            className="p-3 text-xxs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
+            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
           >
             Home
           </Link>
 
           <Link
             href={"/projects"}
-            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
+            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
           >
             Projects
           </Link>
 
           <Link
             href={"/contact"}
-            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm"
+            className="p-3 text-xs font-semibold hover:text-indigo-800 sm:text-xs md:text-sm lg:text-base"
           >
             Contact
           </Link>
 
-          <BsMoonStarsFill className="ml-3 mt-3 h-5 text-indigo-800 sm:text-xs md:text-sm sm:h-3" />
+          <BsMoonStarsFill className="ml-3 mt-3 h-5 text-indigo-800 sm:text-xs md:text-sm lg:text-base " />
         </div>
       </div>
 
-      <div className="container mx-auto bg-purple-200 p-5">
+      <div className="container mx-auto bg-purple-200 p-5 h-max">
         {props.children}
       </div>
     </>
