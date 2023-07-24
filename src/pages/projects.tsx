@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ProjectsPage() {
   return (
     <div className="h-screen bg-purple-100">
-      <div className="p-6 text-center font-serif text-6xl">Projects</div>
+      <div className="p-6 text-center font-serif text-3xl">Projects</div>
       {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
       <div className="container m-1 mx-auto w-1/2 rounded-lg border-2 border-white bg-purple-200 p-1">
         <div className="m-4 flex flex-row">
