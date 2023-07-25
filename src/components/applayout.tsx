@@ -20,30 +20,30 @@ export function AppLayout(props: { children: ReactNode }) {
         <div className="container flex justify-end gap-1 text-right">
           <Link
             href={"/"}
-            className="py-3 px-1 text-xs font-semibold hover:text-indigo-800 transition sm:text-xs md:text-sm lg:text-base"
+            className="py-3 px-1 text-xs font-semibold font-serif hover:text-indigo-800 transition sm:text-xs md:text-sm "
           >
             Home
           </Link>
 
           <Link
             href={"/projects"}
-            className="py-3 px-1 text-xs font-semibold hover:text-indigo-800 transition sm:text-xs md:text-sm lg:text-base"
+            className="py-3 px-1 text-xs font-semibold font-serif hover:text-indigo-800 transition sm:text-xs md:text-sm "
           >
             Projects
           </Link>
 
           <Link
             href={"/contact"}
-            className="py-3 px-1 text-xs font-semibold hover:text-indigo-800 transition sm:text-xs md:text-sm lg:text-base"
+            className="py-3 px-1 text-xs font-semibold font-serif hover:text-indigo-800 transition sm:text-xs md:text-sm "
           >
             Contact
           </Link>
 
-          <BsMoonStarsFill className="ml-3 mt-3 h-5 text-indigo-800 sm:text-xs md:text-sm lg:text-base " />
+          <BsMoonStarsFill className="ml-3 mt-3 h-5 text-indigo-800 sm:text-xs md:text-sm  " />
         </div>
       </div>
 
-      <div className="container mx-auto bg-purple-200 p-5 h-auto">
+      <div className="container mx-auto bg-purple-200 p-5 h-auto font-serif">
         {props.children}
       </div>
     </>
