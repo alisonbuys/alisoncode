@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { IoIosSend } from "react-icons/io";
+import ProjectsPage from "./projects";
+import ContactPage from "./contact";
 
 // import { api } from "~/utils/api";
 
@@ -24,7 +26,7 @@ const Home: NextPage = () => {
                 Hello, I&apos;m Alison
               </div>
               <div>
-                Outgoing and ambitious high school graduate.
+                Problem solver eager to prove my value and talent.
                 <br />
                 Desire to learn and use my creativity to be a web developer.
               </div>
@@ -51,6 +53,9 @@ text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 ho
             </div>
           </div>
         </div>
+
+        <ProjectsPage />
+        <ContactPage/>
       </main>
     </>
   );
