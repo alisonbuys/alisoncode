@@ -9,13 +9,7 @@ export function AppLayout(props: { children: ReactNode }) {
     <>
       <div className="container mx-auto flex bg-purple-100 p-3 ">
         <div className=" container justify-start">
-          <Image
-            className="h-8 w-auto"
-            src="/assets/images/logo5.png"
-            alt={"logo"}
-            width={200 * 4}
-            height={200 * 4}
-          />
+       
         </div>
         <div className="container flex justify-end gap-1 text-right">
           <Link
