@@ -1,4 +1,4 @@
-import { createRoot, type Vector3 } from "@react-three/fiber";
+import { type Vector3 } from "@react-three/fiber";
 import { useRef } from "react";
 
 export default function Sphere(props: { position: Vector3 }) {

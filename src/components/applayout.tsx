@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { type ReactNode } from "react";
-import { FcHome, FcFolder, FcBusinessContact } from "react-icons/fc";
-import Image from "next/image";
 import { BsMoonStarsFill } from "react-icons/bs";
 
 export function AppLayout(props: { children: ReactNode }) {
