@@ -5,6 +5,7 @@ import Link from "next/link";
 import { IoIosSend } from "react-icons/io";
 import ProjectsPage from "./projects";
 import ContactPage from "./contact";
+import { FaLaptopCode } from "react-icons/fa";
 
 // import { api } from "~/utils/api";
 
@@ -19,10 +20,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className=" bg-purple-100">
-          <div className=" container mx-auto flex flex-row justify-center ">
-            <div className="container flex-col py-5 px-10 sm:py-40 sm:mx-auto md:px-40">
-              <div className="pb-5 text-3xl  lg:text-5xl font-medium">
+        <div className="container mx-auto flex flex-col">
+          <div className=" mx-auto justify-center ">
+            <div className="container justify-center mx-auto">
+            <div className="p-4">
+              <Image
+                height={200}
+                width={200}
+                src={"/assets/images/pfp.png"}
+                className=" mx-auto"
+                alt={"AI Picture of Alison"}
+              />
+            </div>
+              <div className="pb-5 text-3xl lg:text-5xl mx-auto font-medium">
                 Hello, I&apos;m Alison
               </div>
               <div>
@@ -33,28 +43,51 @@ const Home: NextPage = () => {
 
               <Link
                 type="button"
-                href="/contact"
-                className="mt-5 flex w-32 rounded-lg bg-gradient-to-r from-indigo-500 to-indigo-300 p-3 
+                href="/projects"
+                className="mt-5 flex w-32 rounded-lg bg-gradient-to-r from-indigo-500 to-yellow-300 font-bold p-3 
 text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 text-xs"
               >
-                Contact me
-                <IoIosSend className="ml-2 h-5 w-5 font-medium" />
+                Projects
+                <FaLaptopCode className="ml-2 h-5 w-5 font-medium" />
               </Link>
-            </div>
-
-            <div className="container py-32">
-              <Image
-                height={200}
-                width={300}
-                src={"/assets/images/pfp.png"}
-                className=" "
-                alt={"AI Picture of Alison"}
-              />
             </div>
           </div>
         </div>
-
-        <ProjectsPage />
+        <div className=" container py-10 sm:py-32 mx-auto">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col gap-5">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="flex font-serif text-3xl tracking-tight text-gray-900">
+            Projects
+          </div>
+          <p className="mt-6 font-serif text-lg leading-8 mb-5 text-gray-600">
+            Preview of my :
+          </p>
+        <div className="flex flex-row gap-5">
+        <Image
+                height={200}
+                width={200}
+                src={"/assets/images/wapp.png"}
+                className=" mx-auto"
+                alt={"AI Picture of Alison"}
+              />
+              <Image
+                height={200}
+                width={200}
+                src={"/assets/images/tapp.png"}
+                className=" mx-auto"
+                alt={"AI Picture of Alison"}
+              />
+              <Image
+                height={200}
+                width={200}
+                src={"/assets/images/fdapp.png"}
+                className=" mx-auto"
+                alt={"AI Picture of Alison"}
+              />
+              </div>
+              </div>
+              </div>
+              </div>
         <ContactPage/>
       </main>
     </>
