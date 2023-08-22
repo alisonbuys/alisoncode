@@ -10,7 +10,7 @@ import { BsPhone } from "react-icons/bs";
 export function ContactPage() {
   return (
     <>
-    <div className="bg-purple-100">
+    <div className="">
     <div className="py-10 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col gap-5">
         <div className="mx-auto max-w-2xl lg:mx-0">
