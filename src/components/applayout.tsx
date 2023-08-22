@@ -35,7 +35,7 @@ export function AppLayout(props: { children: ReactNode }) {
         </div>
       </div>
 
-      <div className="container mx-auto bg-purple-200 p-5 h-auto font-serif">
+      <div className="container mx-auto bg-purple-200 p-5 h-auto font-sans">
         {props.children}
       </div>
     </>
