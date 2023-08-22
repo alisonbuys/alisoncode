@@ -34,7 +34,7 @@ export default function PyramidApp() {
         value={rows}
         onChange={(e) => set_rows(e.target.valueAsNumber)}
       />
-     Chnage row count here !
+     Change row count here !
         <Canvas camera={{ position: [0, 0, 4], fov: 40 }}>
           <OrbitControls />
           <directionalLight position={[1, 2, 3]} intensity={1.5} />
