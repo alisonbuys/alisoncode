@@ -25,11 +25,12 @@ export default function PyramidApp() {
   return (
     <>
       <input
-        className="ml-5 rounded-lg border-black bg-neutral-300 p-4"
+        className=" m-5 rounded-lg border-black bg-neutral-100 p-4"
         type="number"
         value={rows}
         onChange={(e) => set_rows(e.target.valueAsNumber)}
       />
+      Change row count here !
       {steps.map((step) => (
         <div key={step.toString()} className="m-1 flex gap-1">
           <div className=" mx-auto flex p-2">
@@ -37,7 +38,7 @@ export default function PyramidApp() {
               return (
                 <div
                   key={brick.toString()}
-                  className=" m-0.5 rounded-md bg-white p-2"
+                  className=" m-0.5 rounded-md bg-white p-4 "
                 >
                   {brick}
                 </div>
