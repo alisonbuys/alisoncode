@@ -6,13 +6,13 @@ export  function ProjectsPage() {
     <div className="">
       <div className="p-6 text-center font-serif text-3xl">Projects</div>
       {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
-            src={"/assets/images/msgapp.png"}
-            className="rounded-lg  "
+            src={"/assets/images/wapp.png"}
+            className="rounded-lg h-30 w-20 "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
@@ -23,13 +23,13 @@ export  function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
-            src={"/assets/images/todo.png"}
-            className="rounded-lg  "
+            src={"/assets/images/tapp.png"}
+            className="rounded-lg h-30 w-20 "
             alt={"projects"}
           />
 
@@ -40,12 +40,12 @@ export  function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
-            src={"/assets/images/pyramid.png"}
+            src={"/assets/images/papp.png"}
             className="rounded-lg  "
             alt={"projects"}
           />
@@ -57,12 +57,12 @@ export  function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
-            src={"/assets/images/3dpyramid.png"}
+            src={"/assets/images/p3app.png"}
             className="rounded-lg  "
             alt={"projects"}
           />
@@ -74,7 +74,7 @@ export  function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-purple-200 hover:bg-purple-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -90,6 +90,22 @@ export  function ProjectsPage() {
           />
         </div>
       </div>
+      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+        <div className="m-4 flex flex-row">
+          <Image
+            height={100}
+            width={100}
+            src={"/assets/images/cdapp.png"}
+            className="rounded-lg  "
+            alt={"projects"}
+          />
+          <ProjectThumbnailLinks
+            link={"/projects/deliveryapp"}
+            name={"Cartoon Delivery App"}
+            description={"A simple Cartoon Delivery App clone built with react."}
+          />
+        </div>
+      </div>
     </div>
   );
 }
@@ -102,7 +118,7 @@ function ProjectThumbnailLinks(props: {
   return (
     <Link href={props.link} className="">
       <div className=" container mx-1 my-2 flex flex-col rounded-lg p-4">
-        <h3 className="font-serif text-purple-900">{props.name}</h3>
+        <h3 className="font-serif text-indigo-900">{props.name}</h3>
 
         <div className="pt-1 font-serif text-xs text-black">
           {props.description}
