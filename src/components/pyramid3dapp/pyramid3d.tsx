@@ -27,13 +27,14 @@ export default function PyramidApp() {
 
   return (
     <>
+     <div className="h-screen bg-gradient-to-b from-sky-200 from-30% via-pink-300 via-70% to-amber-300 to-90%">
       <input
-        className="ml-5 rounded-lg border-black bg-neutral-300 p-4"
+        className="m-5 rounded-lg border-black bg-neutral-100 p-4"
         type="number"
         value={rows}
         onChange={(e) => set_rows(e.target.valueAsNumber)}
       />
-      <div className="h-screen bg-gray-500">
+     Chnage row count here !
         <Canvas camera={{ position: [0, 0, 4], fov: 40 }}>
           <OrbitControls />
           <directionalLight position={[1, 2, 3]} intensity={1.5} />

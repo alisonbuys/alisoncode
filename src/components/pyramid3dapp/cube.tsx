@@ -8,7 +8,7 @@ export default function Cube(props: { position: Vector3 }) {
     <>
       <mesh ref={cubeRef} position={props.position} scale={0.95}>
         <boxGeometry />
-        <meshStandardMaterial color="orange" />
+        <meshStandardMaterial color="hotpink" />
       </mesh>
     </>
   );
