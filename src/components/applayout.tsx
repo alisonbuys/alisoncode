@@ -1,11 +1,9 @@
-import { BsCloudArrowUpFill, BsFolder2Open, BsMoonStarsFill, BsPersonLock, BsStarFill } from "react-icons/bs";
-import { IoIosPeople } from "react-icons/io";
+import {BsMoonStarsFill,} from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
-import { TbLogout, TbSettingsFilled } from "react-icons/tb";
 import { type ReactNode } from "react";
 import { MdPermContactCalendar } from "react-icons/md";
-import { AiOutlineHome, AiTwotoneHome } from "react-icons/ai";
+import { AiTwotoneHome } from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
 
 export function AppLayout(props: { children: ReactNode }) {
