@@ -62,7 +62,7 @@ text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 ho
           <p className="mt-6 font-serif text-lg leading-8 mb-5 text-gray-600">
             Preview of my :
           </p>
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-col lg:flex-row md:flex-row sm:flex-row gap-5">
         <Image
                 height={200}
                 width={200}

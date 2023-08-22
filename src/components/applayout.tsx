@@ -9,8 +9,8 @@ import { FaLaptopCode } from "react-icons/fa";
 export function AppLayout(props: { children: ReactNode }) {
   return (
     <>
-      <div className="flex h-fit">
-        <div className=" container relative w-40 justify-items-center bg-indigo-900">
+      <div className="flex h-fit mx-auto">
+        <div className="container relative w-40 justify-items-center bg-indigo-900">
           <div className="flex justify-center pb-5 pt-5">
             <Image
               height={100}
@@ -53,7 +53,7 @@ export function AppLayout(props: { children: ReactNode }) {
           </div>
         </div>
 
-        <div className="container rounded-r-2xl bg-indigo-100 w-screen px-6 py-6 ">
+        <div className="container bg-indigo-100 w-full h-full py-6 ">
           {props.children}
         
         </div>
