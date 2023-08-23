@@ -60,31 +60,60 @@ text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 ho
             Projects
           </div>
           <p className="mt-6 font-serif text-lg leading-8 mb-5 text-gray-600">
-            Preview of my :
+             
           </p>
-        <div className="flex flex-col lg:flex-row md:flex-row sm:flex-row gap-5">
-        <Image
-                height={200}
-                width={200}
-                src={"/assets/images/wapp.png"}
-                className=" mx-auto"
-                alt={"AI Picture of Alison"}
-              />
-              <Image
-                height={200}
-                width={200}
-                src={"/assets/images/tapp.png"}
-                className=" mx-auto"
-                alt={"AI Picture of Alison"}
-              />
-              <Image
-                height={200}
-                width={200}
-                src={"/assets/images/fdapp.png"}
-                className=" mx-auto"
-                alt={"AI Picture of Alison"}
-              />
-              </div>
+          <div className="flex flex-row gap-4">
+          <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+        <div className="m-4 flex flex-row">
+          <Image
+            height={100}
+            width={100}
+            src={"/assets/images/wapp.png"}
+            className="rounded-lg h-30 w-20 "
+            alt={"projects"}
+          />
+          <ProjectThumbnailLinks
+            link={"/projects/messageapp"}
+            name={"Message App"}
+            description={"A simple WhatsApp clone built with react."}
+          />
+        </div>
+      </div>
+      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+        <div className="m-4 flex flex-row">
+          <Image
+            height={100}
+            width={100}
+            src={"/assets/images/tapp.png"}
+            className="rounded-lg h-30 w-20 "
+            alt={"projects"}
+          />
+
+          <ProjectThumbnailLinks
+            link={"/projects/todoapp"}
+            name={"TODO App"}
+            description={"A simple todo clone built with react."}
+          />
+        </div>
+      </div>
+      </div>
+      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+        <div className="m-4 flex flex-row">
+          <Image
+            height={100}
+            width={100}
+            src={"/assets/images/fdapp.png"}
+            className="rounded-lg h-30 w-20   "
+            alt={"projects"}
+          />
+          <ProjectThumbnailLinks
+            link={"/projects/deliveryapp"}
+            name={"Cartoon Delivery App"}
+            description={"A simple Cartoon Delivery App clone built with react."}
+          />
+        </div>
+      </div>
+       
               </div>
               </div>
               </div>
@@ -94,20 +123,23 @@ text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 ho
   );
 };
 
-// function ProjectThumbnailLinks(props: {
-//   link: string;
-//   name: string;
-//   description: string;
-// }) {
-//   return (
-//     <Link href={props.link} className="">
-//       <div className="h-full rounded-lg bg-gray-300 p-4 pb-4 transition hover:bg-purple-300">
-//         <h3 className="font-serif text-purple-700">{props.name}</h3>
+function ProjectThumbnailLinks(props: {
+  link: string;
+  name: string;
+  description: string;
+}) {
+  return (
+    <Link href={props.link} className="">
+      <div className=" container mx-1 my-2 flex flex-col rounded-lg p-4">
+        <h3 className="font-serif text-indigo-900">{props.name}</h3>
 
-//         <div className="font-serif">{props.description}</div>
-//       </div>
-//     </Link>
-//   );
-// }
+        <div className="pt-1 font-serif text-xs text-black">
+          {props.description}
+        </div>
+      </div>
+    </Link>
+  );
+}
+
 
 export default Home;

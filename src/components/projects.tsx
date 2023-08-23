@@ -95,8 +95,8 @@ export  function ProjectsPage() {
           <Image
             height={100}
             width={100}
-            src={"/assets/images/cdapp.png"}
-            className="rounded-lg  "
+            src={"/assets/images/fdapp.png"}
+            className="rounded-lg h-30 w-20   "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
