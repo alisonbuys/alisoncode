@@ -53,7 +53,7 @@ export function AppLayout(props: { children: ReactNode }) {
           </div>
         </div>
 
-        <div className="container bg-indigo-100 w-full h-full py-6 ">
+        <div className="container bg-indigo-100 w-full h-full py-6 px-6 ">
           {props.children}
         
         </div>
