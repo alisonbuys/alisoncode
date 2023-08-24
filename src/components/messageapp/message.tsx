@@ -13,7 +13,7 @@ import {IoMdSend} from "react-icons/io"
 import { FaSignal } from "react-icons/fa";
 import { MdOutlineWifi } from "react-icons/md";
 
-type ChatMessage = {
+export type ChatMessage = {
   id: string;
   from: string;
   to: string;

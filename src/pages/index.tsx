@@ -102,17 +102,18 @@ text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 ho
           <Image
             height={100}
             width={100}
-            src={"/assets/images/fdapp.png"}
-            className="rounded-lg h-30 w-20   "
+            src={"/assets/images/papp.png"}
+            className="rounded-lg  "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
-            link={"/projects/deliveryapp"}
-            name={"Cartoon Delivery App"}
-            description={"A simple Cartoon Delivery App clone built with react."}
+            link={"/projects/pyramid"}
+            name={"Pyramid App"}
+            description={"A simple 3D clone built with react."}
           />
         </div>
       </div>
+
        
               </div>
               </div>
