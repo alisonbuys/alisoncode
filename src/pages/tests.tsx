@@ -1,6 +1,4 @@
-import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
-import Link from "next/link";
 import { BiTask } from "react-icons/bi";
 import { FiTrash2 } from "react-icons/fi";
 import  NewPostForm  from "~/components/newpostform";
