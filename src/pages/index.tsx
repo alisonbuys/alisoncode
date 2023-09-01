@@ -2,8 +2,6 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { IoIosSend } from "react-icons/io";
-import ProjectsPage from "./projects";
 import ContactPage from "./contact";
 import { FaLaptopCode } from "react-icons/fa";
 
