@@ -3,9 +3,11 @@ import {FaSignal} from "react-icons/fa"
 import {MdOutlineWifi} from "react-icons/md"
 import {BsBatteryFull} from "react-icons/bs"
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import { K53Questions } from "./questions";
 
 export function K53App (){
     return(<><main className="">
+      <K53Questions />
     <div className="container mx-auto h-fit w-80 rounded-3xl border-2 border-black bg-gradient-to-b from-sky-200 from-10% via-blue-400 via-70% to-blue-500 to-90% ">
       <div className=" container p-2 flex flex-row ">
         <p className="text-xs ml-4 mr-48 font-semibold">9:41
