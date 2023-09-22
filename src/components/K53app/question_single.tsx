@@ -27,7 +27,7 @@ export function QuestionSingle({
           <Image
             src={question.imageSrc}
             alt={question.imageAlt}
-            width={400}
+            width={200}
             height={200}
             className="pt-2"
           />
@@ -68,7 +68,7 @@ export function QuestionSingle({
 
       {isCorrect ? (
         <button
-          className="rounded bg-green-300 p-2 px-4 text-white transition hover:bg-sky-400"
+          className="mt-2 rounded bg-green-500 p-2 px-4 text-white transition hover:bg-green-600"
           onClick={() => {
             onNext();
           }}
