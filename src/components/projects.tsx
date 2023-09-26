@@ -1,18 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export  function ProjectsPage() {
+export function ProjectsPage() {
   return (
     <div className="">
       <div className="p-6 text-center font-serif text-3xl">Projects</div>
       {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
             src={"/assets/images/wapp.png"}
-            className="rounded-lg h-30 w-20 "
+            className="h-30 w-20 rounded-lg "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
@@ -23,13 +23,13 @@ export  function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
             src={"/assets/images/tapp.png"}
-            className="rounded-lg h-30 w-20 "
+            className="h-30 w-20 rounded-lg "
             alt={"projects"}
           />
 
@@ -40,12 +40,12 @@ export  function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
-            src={"/assets/images/papp.png"}
+            src={"/assets/images/Pyramid.png"}
             className="rounded-lg  "
             alt={"projects"}
           />
@@ -57,12 +57,12 @@ export  function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
-            src={"/assets/images/p3app.png"}
+            src={"/assets/images/3D_pyramid.png"}
             className="rounded-lg  "
             alt={"projects"}
           />
@@ -74,12 +74,12 @@ export  function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
-            src={"/assets/images/appdesign.png"}
+            src={"/assets/images/App_design.png"}
             className="rounded-lg  "
             alt={"projects"}
           />
@@ -90,19 +90,37 @@ export  function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 w-auto mx-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
-            height={100}
-            width={100}
-            src={"/assets/images/fdapp.png"}
-            className="rounded-lg h-30 w-20   "
+            height={200}
+            width={200}
+            src={"/assets/images/delapp.png"}
+            className="h-30 w-20 rounded-lg   "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
             link={"/projects/deliveryapp"}
             name={"Cartoon Delivery App"}
-            description={"A simple Cartoon Delivery App clone built with react."}
+            description={
+              "A simple Cartoon Delivery App clone built with react."
+            }
+          />
+        </div>
+      </div>
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+        <div className="m-4 flex flex-row">
+          <Image
+            height={100}
+            width={100}
+            src={"/assets/images/K53_app.png"}
+            className="h-30 w-20 rounded-lg   "
+            alt={"projects"}
+          />
+          <ProjectThumbnailLinks
+            link={"/projects/k53app"}
+            name={"K53 Test App"}
+            description={"A simple K53 Test App built with react."}
           />
         </div>
       </div>
