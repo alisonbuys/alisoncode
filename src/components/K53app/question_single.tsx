@@ -26,7 +26,7 @@ export function QuestionSingle({
         {question.imageSrc && (
           <Image
             src={question.imageSrc}
-            alt={question.imageAlt}
+            alt={question.imageAlt ?? ""}
             width={200}
             height={200}
             className="pt-2"
