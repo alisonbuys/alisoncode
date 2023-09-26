@@ -5,8 +5,8 @@ import Link from "next/link";
 export function K53App() {
   return (
     <>
-      <main className="">
-        <div className="container mx-auto h-screen rounded-3xl border-2 border-black bg-gradient-to-b from-sky-200 from-10% via-blue-400 via-70% to-blue-500 to-90% ">
+      <main className="h-screen w-screen bg-indigo-100 p-5">
+        <div className="container h-full rounded-3xl border-2 border-black bg-gradient-to-b from-sky-200 from-10% via-blue-400 via-70% to-blue-500 to-90% ">
           <div className="pt-5 text-center font-serif text-5xl tracking-tight text-white">
             K53
           </div>

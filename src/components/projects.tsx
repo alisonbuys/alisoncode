@@ -3,10 +3,12 @@ import Image from "next/image";
 
 export function ProjectsPage() {
   return (
-    <div className="">
-      <div className="p-6 text-center font-serif text-3xl">Projects</div>
+    <div className="w-screen bg-indigo-100 p-10">
+      <div className="mx-auto justify-center p-6 text-center font-sans text-3xl">
+        Projects
+      </div>
       {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -23,7 +25,7 @@ export function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -40,7 +42,7 @@ export function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -57,7 +59,7 @@ export function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -74,7 +76,7 @@ export function ProjectsPage() {
         </div>
       </div>
 
-      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -90,7 +92,7 @@ export function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={200}
@@ -108,13 +110,13 @@ export function ProjectsPage() {
           />
         </div>
       </div>
-      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-slate-300 hover:bg-indigo-50 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
             width={100}
             src={"/assets/images/K53_app.png"}
-            className="h-30 w-20 rounded-lg   "
+            className="h-30 w-32 rounded-lg   "
             alt={"projects"}
           />
           <ProjectThumbnailLinks
@@ -136,9 +138,9 @@ function ProjectThumbnailLinks(props: {
   return (
     <Link href={props.link} className="">
       <div className=" container mx-1 my-2 flex flex-col rounded-lg p-4">
-        <h3 className="font-serif text-indigo-900">{props.name}</h3>
+        <h3 className="font-sans text-indigo-900">{props.name}</h3>
 
-        <div className="pt-1 font-serif text-xs text-black">
+        <div className="pt-1 font-sans text-xs text-black">
           {props.description}
         </div>
       </div>

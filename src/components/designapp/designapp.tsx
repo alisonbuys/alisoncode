@@ -50,7 +50,7 @@ export function DesignApp() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex h-fit">
+      <main className=" m-5 flex h-screen w-screen bg-indigo-100 ">
         {/* Nav Bar */}
 
         <Nav>
@@ -61,7 +61,7 @@ export function DesignApp() {
           <Searchbar>
             {}
             <div className="flex flex-row">
-              <div className="container ">
+              <div className="container">
                 <p className="p-4 pb-0  pl-6 pt-6 text-xl font-semibold text-blue-900 ">
                   Categories
                 </p>
