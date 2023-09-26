@@ -6,7 +6,7 @@ export function K53App() {
   return (
     <>
       <main className="">
-        <div className="container mx-auto h-fit rounded-3xl border-2 border-black bg-gradient-to-b from-sky-200 from-10% via-blue-400 via-70% to-blue-500 to-90% ">
+        <div className="container mx-auto h-screen rounded-3xl border-2 border-black bg-gradient-to-b from-sky-200 from-10% via-blue-400 via-70% to-blue-500 to-90% ">
           <div className="pt-5 text-center font-serif text-5xl tracking-tight text-white">
             K53
           </div>
@@ -50,7 +50,7 @@ export function K53App() {
           <div className="mx-auto my-10 flex justify-center">
             <Link
               href={"/projects/questionspage"}
-              className="my-4 w-60 rounded-md bg-blue-800 p-2 text-center text-sm font-bold text-white transition hover:bg-blue-700"
+              className="my-4 w-40 rounded-md bg-blue-800 p-2 text-center text-sm font-bold text-white transition hover:bg-blue-700"
             >
               Start Test
             </Link>
