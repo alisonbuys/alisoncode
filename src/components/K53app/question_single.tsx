@@ -87,3 +87,4 @@ export function QuestionSingle({
 //   ) : (
 //     <div className="text-red-500">WRONG ANSWER</div>
 //   )}
+/* image 53 */

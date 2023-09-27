@@ -6,16 +6,27 @@ import {
 } from "react-icons/ai";
 import { BiMap } from "react-icons/bi";
 import { BsPhone } from "react-icons/bs";
+import Image from "next/image";
 
 export function ContactPage() {
   return (
     <>
       <div className=" h-screen w-screen bg-indigo-100">
-        <div className="sm:py-32">
+        <div className="flex flex-row justify-start">
+          {" "}
+          <Image
+            height={200}
+            width={200}
+            src={"/assets/images/flowerplant.png"}
+            className=""
+            alt={"AI Picture of Alison"}
+          />
+        </div>
+        <div className="sm:py-10">
           <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
-              <div className="flex font-sans text-3xl tracking-tight text-gray-900">
-                Contact me
+              <div className="flex font-sans text-3xl font-semibold tracking-tight text-indigo-950">
+                CONTACT ME
               </div>
               <p className="mt-6 font-sans text-lg leading-8 text-gray-600">
                 You can contact me on any of the following platforms below:
@@ -80,6 +91,16 @@ export function ContactPage() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex flex-row">
+          {" "}
+          <Image
+            height={200}
+            width={200}
+            src={"/assets/images/tree_bottom2.png"}
+            className="mt-10"
+            alt={"AI Picture of Alison"}
+          />
         </div>
       </div>
     </>

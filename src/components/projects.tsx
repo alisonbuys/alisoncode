@@ -3,12 +3,22 @@ import Image from "next/image";
 
 export function ProjectsPage() {
   return (
-    <div className="w-screen bg-indigo-100 p-10">
-      <div className="mx-auto justify-center p-6 text-center font-sans text-3xl">
-        Projects
+    <div className="w-screen bg-indigo-100 ">
+      <div className="flex flex-row justify-start">
+        {" "}
+        <Image
+          height={200}
+          width={200}
+          src={"/assets/images/flowerplant.png"}
+          className=""
+          alt={"AI Picture of Alison"}
+        />
+      </div>
+      <div className="justify-center pb-4 text-center font-sans text-3xl font-semibold text-indigo-950">
+        PROJECTS
       </div>
       {/* <div className="span row-span-full m-1 flex flex-col gap-y-6 space-y-1"> */}
-      <div className="container m-1 mx-auto w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
+      <div className="container m-1 w-auto rounded-lg border-2 border-white bg-indigo-200 hover:bg-indigo-100 sm:mx-auto sm:w-96 md:mx-auto md:w-96 lg:mx-auto lg:w-1/2">
         <div className="m-4 flex flex-row">
           <Image
             height={100}
@@ -125,6 +135,16 @@ export function ProjectsPage() {
             description={"A simple K53 Test App built with react."}
           />
         </div>
+      </div>
+      <div className="flex flex-row ">
+        {" "}
+        <Image
+          height={200}
+          width={200}
+          src={"/assets/images/flower_bottom.png"}
+          className="mt-3"
+          alt={"AI Picture of Alison"}
+        />
       </div>
     </div>
   );
