@@ -150,7 +150,7 @@ const Home: NextPage = () => {
           <Image
             height={200}
             width={200}
-            src={"/assets/images/flower_bottom.png"}
+            src={"/assets/images/plant3.png"}
             className=""
             alt={"AI Picture of Alison"}
           />

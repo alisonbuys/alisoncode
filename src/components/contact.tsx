@@ -17,7 +17,7 @@ export function ContactPage() {
           <Image
             height={200}
             width={200}
-            src={"/assets/images/flowerplant.png"}
+            src={"/assets/images/plant2.png"}
             className=""
             alt={"AI Picture of Alison"}
           />
@@ -98,7 +98,7 @@ export function ContactPage() {
             height={200}
             width={200}
             src={"/assets/images/tree_bottom2.png"}
-            className="mt-10"
+            className="mt-14"
             alt={"AI Picture of Alison"}
           />
         </div>

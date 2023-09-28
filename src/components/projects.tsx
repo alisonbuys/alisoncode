@@ -9,7 +9,7 @@ export function ProjectsPage() {
         <Image
           height={200}
           width={200}
-          src={"/assets/images/flowerplant.png"}
+          src={"/assets/images/treedec.png"}
           className=""
           alt={"AI Picture of Alison"}
         />
@@ -141,7 +141,7 @@ export function ProjectsPage() {
         <Image
           height={200}
           width={200}
-          src={"/assets/images/flower_bottom.png"}
+          src={"/assets/images/tree_bottom2.png"}
           className="mt-3"
           alt={"AI Picture of Alison"}
         />
