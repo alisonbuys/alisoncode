@@ -64,11 +64,12 @@ export default function Nav(props: { children: ReactNode }) {
           {props.children}
           <div className="mt-7 text-right text-sm text-slate-400">
             A simple App Design clone built with React.
-            <p className=" font-medium">Click on nav buttons to go to different pages !</p>
+            <p className=" font-medium">
+              Click on nav buttons to go to different pages !
+            </p>
           </div>
         </div>
       </div>
     </>
   );
 }
- 
