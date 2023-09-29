@@ -64,7 +64,7 @@ export function ProjectsPage() {
           <ProjectThumbnailLinks
             link={"/projects/pyramid"}
             name={"Pyramid App"}
-            description={"A simple 3D clone built with react."}
+            description={"A simple pyramid clone built with react."}
           />
         </div>
       </div>
@@ -81,7 +81,7 @@ export function ProjectsPage() {
           <ProjectThumbnailLinks
             link={"/projects/pyramid3d"}
             name={"3D Pyramid App"}
-            description={"A simple pyramid clone built with react."}
+            description={"A simple 3D pyramid clone built with react."}
           />
         </div>
       </div>
