@@ -8,7 +8,7 @@ import { type ReactNode } from "react";
 export default function Nav(props: { children: ReactNode }) {
   return (
     <>
-      <div className="flex h-fit">
+      <div className="mx-auto flex h-fit justify-center p-10">
         <div className=" container relative w-64 justify-items-center rounded-l-2xl bg-blue-900">
           <div className="flex justify-center pb-5 pt-5">
             <Image
@@ -60,7 +60,7 @@ export default function Nav(props: { children: ReactNode }) {
           </div>
         </div>
 
-        <div className="container w-5/6 rounded-r-2xl bg-slate-200 px-6 py-6 ">
+        <div className="container rounded-r-2xl bg-slate-200 px-6 py-6 ">
           {props.children}
           <div className="mt-7 text-right text-sm text-slate-400">
             A simple App Design clone built with React.

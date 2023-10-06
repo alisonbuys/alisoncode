@@ -12,6 +12,7 @@ import { BsBatteryFull, BsFillTelephoneFill } from "react-icons/bs";
 import { IoMdSend } from "react-icons/io";
 import { FaSignal } from "react-icons/fa";
 import { MdOutlineWifi } from "react-icons/md";
+import { BackButton } from "../BackButton";
 
 export type ChatMessage = {
   id: string;
@@ -55,6 +56,7 @@ export function MessageApp() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex h-screen w-screen flex-col items-center justify-center bg-sky-100 p-8">
+        {/* <BackButton /> */}
         <div className="h-fit w-80 overflow-hidden rounded-2xl border-2 border-black bg-orange-50 shadow-xl">
           <div className="container flex flex-row bg-emerald-900 p-1 px-3 text-white ">
             <FaSignal className="mr-1 h-4 w-4" />

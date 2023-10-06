@@ -60,7 +60,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>ABOUT</HText>
+          <HText>FIGMA DESIGNS</HText>
           <p className="my-5 text-sm">
             We provide world class fitness equipment, trainers and classes to
             get you to your ultimate fitness goals with ease. We provide true

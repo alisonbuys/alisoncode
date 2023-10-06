@@ -1,12 +1,5 @@
-import Logo from "~/assets/Logo.png";
 import Image from "next/image";
-import {
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-  AiOutlineMail,
-} from "react-icons/ai";
 import Link from "next/link";
-import { BsPhone } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -20,7 +13,7 @@ const Footer = () => {
             className=" h-18 w-18 "
             alt={"logo"}
           />
-          <div className="my-5">
+          {/* <div className="my-5">
             <Image
               height={100}
               width={100}
@@ -28,7 +21,7 @@ const Footer = () => {
               className=" h-16 w-14 "
               alt={"logo"}
             />
-          </div>
+          </div> */}
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h3 className=" text-lg font-bold">Links</h3>

@@ -2,43 +2,50 @@ import { SelectedPage, type ClassType } from "~/shared/types";
 import { motion } from "framer-motion";
 import HText from "~/shared/HText";
 import Class from "./Class";
+import Link from "next/link";
 
 const classes: Array<ClassType> = [
   {
-    link: "",
+    link: "/projects/messageapp",
     name: " Message App",
     description: "A simple WhatsApp clone built with react.",
     image: "/new/image1.png",
   },
   {
-    link: "",
+    link: "/projects/todoapp",
     name: "Todo App ",
     description: "A simple Todo clone built with react.",
     image: "/new/image2.png",
   },
   {
-    link: "",
+    link: "/projects/designapp",
+    name: "Design App",
+    description: "A simple App Design built with react.",
+    image: "/new/image5.png",
+  },
+  {
+    link: "/projects/k53app",
+    name: "K53 App",
+    description: "A simple K53 Test App built with react.",
+    image: "/new/image7.png",
+  },
+  {
+    link: "/projects/pyramid",
     name: "Pyramid App",
     description: "A simple Number Pyramid clone built with react.",
     image: "/new/image3.png",
   },
   {
-    link: "",
+    link: "/projects/pyramid3d",
     name: "Adventure Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description: "A simple 3D Pyramid clone built with react.",
     image: "/new/image4.png",
   },
+
   {
-    link: "",
-    name: "Fitness Classes",
-    image: "/new/image5.png",
-  },
-  {
-    link: "",
+    link: "/projects/deliveryapp",
     name: "Training Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description: "A simple cute Cartoon Delivery App built with react.",
     image: "/new/image6.png",
   },
 ];
@@ -65,24 +72,20 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-3/5">
-            <HText>MY PROJECTS</HText>
-            <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
-            </p>
+            <HText>MY REACT PROJECTS</HText>
+            <p className="py-5"></p>
           </div>
         </motion.div>
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
           <ul className="w-[2800px] whitespace-nowrap">
             {classes.map((item: ClassType, index) => (
-              <Class
-                key={`${item.name}-${index}`}
-                name={item.name}
-                description={item.description}
-                image={item.image}
-              />
+              <Link href={item.link} key={`${item.name}-${index}`}>
+                <Class
+                  name={item.name}
+                  description={item.description}
+                  image={item.image}
+                />
+              </Link>
             ))}
           </ul>
         </div>

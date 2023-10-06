@@ -50,7 +50,7 @@ export function DesignApp() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" m-5 flex h-screen w-screen bg-indigo-100 ">
+      <main className=" flex h-full w-screen bg-indigo-200 ">
         {/* Nav Bar */}
 
         <Nav>
@@ -142,7 +142,7 @@ export function DesignApp() {
               </div>
 
               <div className="flex flex-row">
-                <div className=" container mx-6 ml-32 mt-4 flex w-96 rounded-2xl bg-white">
+                <div className=" container mx-6 ml-24 mt-4 flex w-96 rounded-2xl bg-white">
                   <div className="mx-auto flex flex-col gap-4 p-5">
                     <div className=" mx-auto rounded-lg bg-slate-100 px-28 py-20 text-center text-sm font-semibold text-blue-900">
                       {" "}

@@ -6,7 +6,7 @@ export function K53App() {
   return (
     <>
       <main className="h-screen w-screen bg-indigo-100 p-5">
-        <div className="container h-full rounded-3xl border-2 border-black bg-gradient-to-b from-sky-200 from-10% via-blue-400 via-70% to-blue-500 to-90% ">
+        <div className="container mx-auto rounded-3xl border-2 border-black bg-gradient-to-b from-sky-200 from-10% via-blue-400 via-70% to-blue-500 to-90% ">
           <div className="pt-5 text-center font-serif text-5xl tracking-tight text-white">
             K53
           </div>
@@ -23,7 +23,7 @@ export function K53App() {
               alt={""}
             />
           </div>
-          <div className=" m-4 justify-center rounded-3xl bg-white sm:mx-28 lg:mx-60 ">
+          <div className=" lg:mx-60 m-4 justify-center rounded-3xl bg-white sm:mx-28 ">
             <IoIosInformationCircleOutline className="mx-auto h-12 w-12 pt-4 text-blue-800" />
             <div className=" m-4">
               <p className="pb-2 pl-2 text-center text-xs text-neutral-700">
