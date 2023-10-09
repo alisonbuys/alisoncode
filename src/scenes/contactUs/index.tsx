@@ -26,9 +26,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contactus" className="mx-auto w-5/6 pb-32 pt-24">
+    <section id="contactme" className="mx-auto w-5/6 pb-32 pt-24">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.ContactMe)}
       >
         {/* HEADER */}
         <motion.div
@@ -81,7 +81,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 })}
               />
               {errors.name && (
-                <p className="text-primary-500 mt-1">
+                <p className="mt-1 text-primary-500">
                   {errors.name.type === "required" && "This field is required."}
                   {errors.name.type === "maxLength" &&
                     "Max length is 100 char."}
@@ -98,7 +98,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 })}
               />
               {errors.email && (
-                <p className="text-primary-500 mt-1">
+                <p className="mt-1 text-primary-500">
                   {errors.email.type === "required" &&
                     "This field is required."}
                   {errors.email.type === "pattern" && "Invalid email address."}
@@ -116,7 +116,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 })}
               />
               {errors.message && (
-                <p className="text-primary-500 mt-1">
+                <p className="mt-1 text-primary-500">
                   {errors.message.type === "required" &&
                     "This field is required."}
                   {errors.message.type === "maxLength" &&
@@ -126,7 +126,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
               <button
                 type="submit"
-                className="bg-secondary-500 mt-5 rounded-lg px-20 py-3 transition duration-500 hover:text-white"
+                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
               >
                 SUBMIT
               </button>

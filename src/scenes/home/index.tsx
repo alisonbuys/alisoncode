@@ -15,7 +15,7 @@ const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id="home" className="gap-16 bg-gray-200 py-10 md:h-screen md:pb-0">
+    <section id="home" className="gap-16 bg-gray-50 py-10 md:h-screen md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -70,18 +70,18 @@ const Home = ({ setSelectedPage }: Props) => {
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-              href={`#${SelectedPage.ContactUs}`}
+              onClick={() => setSelectedPage(SelectedPage.ContactMe)}
+              href={`#${SelectedPage.ContactMe}`}
             ></AnchorLink>
             <Link
               href={"https://www.linkedin.com/in/alison-buys-a84474275"}
-              className="rounded-full bg-indigo-100 p-2 text-primary-500 underline hover:text-secondary-500"
+              className="rounded-full bg-gray-20 p-2 text-primary-500 underline hover:text-secondary-500"
             >
               <AiOutlineLinkedin className="h-6 w-6" />
             </Link>
             <Link
               href={"https://github.com/alisonbuys"}
-              className="rounded-full bg-indigo-100 p-2 text-primary-500 underline hover:text-secondary-500"
+              className="rounded-full bg-gray-20 p-2 text-primary-500 underline hover:text-secondary-500"
             >
               <AiOutlineGithub className="h-6 w-6" />
             </Link>
@@ -96,7 +96,7 @@ const Home = ({ setSelectedPage }: Props) => {
           <Image
             height={800}
             width={800}
-            src={"/new/HomePageGraphic.png"}
+            src={"/new/HomePageGraphic2.png"}
             className=""
             alt={"home-page-graphic"}
           />
