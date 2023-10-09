@@ -65,8 +65,8 @@ export function DesignApp() {
                 <p className="p-4 pb-0  pl-6 pt-6 text-xl font-semibold text-blue-900 ">
                   Categories
                 </p>
-                <div className="flex flex-row gap-4 p-5">
-                  <div className=" basis-1/4 flex-col rounded-lg bg-indigo-500 ">
+                <div className=" flex flex-row gap-4 p-5">
+                  <div className=" flex-col rounded-lg bg-indigo-500 ">
                     <div className="flex">
                       <FcImageFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />
                       <BsStarFill className=" ml-12 mr-3 mt-5 h-6 w-6 text-yellow-300" />
