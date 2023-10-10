@@ -12,8 +12,7 @@ const benefits: Array<BenefitType> = [
     imageAlt: "SLIME figma design",
 
     title: "SLIME Clothing App Design",
-    description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+    description: "A simple clothing store website , designed with Figma.",
   },
   {
     link: "/projects/pyramid3d",
@@ -21,8 +20,7 @@ const benefits: Array<BenefitType> = [
     imageAlt: "",
 
     title: "100's of Diverse Classes",
-    description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+    description: "A simple clothing store website , designed with Figma.",
   },
   {
     link: "/projects/pyramid3d",
@@ -30,8 +28,7 @@ const benefits: Array<BenefitType> = [
     imageAlt: "",
 
     title: "Expert and Pro Trainers",
-    description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+    description: "A simple clothing store website , designed with Figma.",
   },
 ];
 

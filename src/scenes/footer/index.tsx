@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 py-16">
+    <footer className="bg-gray-500 py-16 text-white">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-16 basis-1/2 md:mt-0">
           <Image
             height={200}
             width={200}
-            src={"/new/Logo.png"}
+            src={"/new/Logo3.png"}
             className=" h-18 w-18 "
             alt={"logo"}
           />
