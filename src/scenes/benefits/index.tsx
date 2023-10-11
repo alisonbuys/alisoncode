@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const benefits: Array<BenefitType> = [
   {
-    link: "/slimefigma",
+    link: "/design1",
     imageSrc: "/new/design1.png",
     imageAlt: "SLIME figma design",
 
@@ -15,12 +15,12 @@ const benefits: Array<BenefitType> = [
     description: "A simple clothing store website , designed with Figma.",
   },
   {
-    link: "/projects/pyramid3d",
-    imageSrc: "/new/design1.png",
+    link: "/design2",
+    imageSrc: "/new/design_2.png",
     imageAlt: "",
 
-    title: "100's of Diverse Classes",
-    description: "A simple clothing store website , designed with Figma.",
+    title: "Social Media App Design",
+    description: "A Social Media App (like Instgram), designed with Figma.",
   },
   {
     link: "/projects/pyramid3d",

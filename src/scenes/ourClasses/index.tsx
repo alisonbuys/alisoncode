@@ -37,14 +37,14 @@ const classes: Array<ClassType> = [
   },
   {
     link: "/projects/pyramid3d",
-    name: "Adventure Classes",
+    name: "3D Pyramid App",
     description: "A simple 3D Pyramid clone built with react.",
     image: "/new/image4.png",
   },
 
   {
     link: "/projects/deliveryapp",
-    name: "Training Classes",
+    name: "Cartoon Delivery App",
     description: "A simple cute Cartoon Delivery App built with react.",
     image: "/new/image6.png",
   },
