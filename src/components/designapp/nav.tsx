@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { TbLogout, TbSettingsFilled } from "react-icons/tb";
 import { type ReactNode } from "react";
+import { BackButton } from "../BackButton";
 
 export default function Nav(props: { children: ReactNode }) {
   return (
     <>
+      <div></div>
       <div className="mx-auto flex h-fit justify-center p-10">
         <div className=" container relative w-64 justify-items-center rounded-l-2xl bg-blue-900">
           <div className="flex justify-center pb-5 pt-5">

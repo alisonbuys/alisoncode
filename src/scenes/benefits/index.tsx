@@ -23,11 +23,11 @@ const benefits: Array<BenefitType> = [
     description: "A Social Media App (like Instgram), designed with Figma.",
   },
   {
-    link: "/projects/pyramid3d",
-    imageSrc: "/new/design1.png",
+    link: "/design3",
+    imageSrc: "/new/design3.png",
     imageAlt: "",
 
-    title: "Expert and Pro Trainers",
+    title: "Food Delivery App",
     description: "A simple clothing store website , designed with Figma.",
   },
 ];

@@ -7,6 +7,7 @@ import Image from "next/image";
 import { FaSignal } from "react-icons/fa";
 import { MdOutlineWifi } from "react-icons/md";
 import { BsBatteryFull } from "react-icons/bs";
+import { BackButton } from "../BackButton";
 
 export type TodoItem = {
   id: string;
@@ -30,7 +31,8 @@ export function TodoApp() {
   if (!loaded) return <div>loading...</div>;
 
   return (
-    <main className="flex h-screen w-screen flex-col items-center justify-center bg-slate-200 p-8">
+    <main className="flex h-screen w-screen flex-col  bg-slate-200 p-8">
+      <BackButton />
       <div className="container mx-auto w-80 rounded-3xl border-2 border-black bg-gradient-to-b from-rose-200 from-30% via-rose-300 via-70% to-yellow-200 to-90% ">
         <div className="bg container flex flex-row bg-transparent p-1 px-3 text-white ">
           <FaSignal className="mr-1 h-4 w-4" />
@@ -172,7 +174,7 @@ export function TodoApp() {
         <div className="mx-auto my-40 mb-2 w-24 rounded-3xl bg-black p-0.5"></div>
       </div>
 
-      <p className="p-5 text-gray-500">
+      <p className="mx-auto p-5 text-gray-500">
         Create a TODO list !
         <br /> -Sort tasks
         <br /> -Mark tasks as completed
