@@ -40,7 +40,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 <Image
                   height={800}
                   width={800}
-                  src={"/new/HomePageText.png"}
+                  src={"/new/HomePageText2.png"}
                   className=" "
                   alt={"home-page-text"}
                 />

@@ -1,4 +1,3 @@
-import ActionButton from "~/shared/ActionButton";
 import HText from "~/shared/HText";
 import { BenefitType, SelectedPage } from "~/shared/types";
 import { motion } from "framer-motion";
@@ -7,6 +6,14 @@ import Link from "next/link";
 
 const benefits: Array<BenefitType> = [
   {
+    link: "/design2",
+    imageSrc: "/new/design-2.png",
+    imageAlt: "",
+
+    title: "Social Media App Design",
+    description: "A Social Media App (like Instgram), designed with Figma.",
+  },
+  {
     link: "/design1",
     imageSrc: "/new/design1.png",
     imageAlt: "SLIME figma design",
@@ -14,21 +21,14 @@ const benefits: Array<BenefitType> = [
     title: "SLIME Clothing App Design",
     description: "A simple clothing store website , designed with Figma.",
   },
-  {
-    link: "/design2",
-    imageSrc: "/new/design_2.png",
-    imageAlt: "",
 
-    title: "Social Media App Design",
-    description: "A Social Media App (like Instgram), designed with Figma.",
-  },
   {
     link: "/design3",
-    imageSrc: "/new/design3.png",
+    imageSrc: "/new/design3-2.png",
     imageAlt: "",
 
     title: "Food Delivery App",
-    description: "A simple clothing store website , designed with Figma.",
+    description: "A simple Fast Food Delivery App , designed with Figma.",
   },
 ];
 
