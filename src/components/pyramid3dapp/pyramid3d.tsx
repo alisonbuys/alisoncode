@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { useState } from "react";
 import Cube from "./cube";
 import { OrbitControls } from "@react-three/drei";
+import { BackButton } from "../BackButton";
 
 type PyramidStep = {
   stepNumber: number;
@@ -27,7 +28,8 @@ export default function PyramidApp() {
 
   return (
     <>
-      <div className="h-screen w-screen bg-gradient-to-b from-sky-200 from-30% via-pink-300 via-70% to-amber-300 to-90%">
+      <div className=" h-screen w-screen bg-gradient-to-b from-sky-200 from-30% via-pink-300 via-70% to-amber-300 to-90%">
+        <BackButton />
         <input
           className="m-5 rounded-lg border-black bg-neutral-100 p-4"
           type="number"

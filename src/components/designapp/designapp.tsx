@@ -50,7 +50,7 @@ export function DesignApp() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" m-5 flex h-screen w-screen bg-indigo-100 ">
+      <main className=" flex h-full w-screen bg-indigo-200 ">
         {/* Nav Bar */}
 
         <Nav>
@@ -65,8 +65,8 @@ export function DesignApp() {
                 <p className="p-4 pb-0  pl-6 pt-6 text-xl font-semibold text-blue-900 ">
                   Categories
                 </p>
-                <div className="flex flex-row gap-4 p-5">
-                  <div className=" basis-1/4 flex-col rounded-lg bg-indigo-500 ">
+                <div className=" flex flex-row gap-4 p-5">
+                  <div className=" flex-col rounded-lg bg-indigo-500 ">
                     <div className="flex">
                       <FcImageFile className="mb-2 ml-4 mt-4 h-8 w-8 rounded-full bg-white p-1" />
                       <BsStarFill className=" ml-12 mr-3 mt-5 h-6 w-6 text-yellow-300" />
@@ -142,7 +142,7 @@ export function DesignApp() {
               </div>
 
               <div className="flex flex-row">
-                <div className=" container mx-6 ml-32 mt-4 flex w-96 rounded-2xl bg-white">
+                <div className=" container mx-6 ml-24 mt-4 flex w-96 rounded-2xl bg-white">
                   <div className="mx-auto flex flex-col gap-4 p-5">
                     <div className=" mx-auto rounded-lg bg-slate-100 px-28 py-20 text-center text-sm font-semibold text-blue-900">
                       {" "}
