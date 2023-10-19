@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BackButton } from "../BackButton";
 
 type PyramidStep = {
   stepNumber: number;

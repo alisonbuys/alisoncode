@@ -13,8 +13,6 @@ import { IoMdSend } from "react-icons/io";
 import { FaSignal } from "react-icons/fa";
 import { MdOutlineWifi } from "react-icons/md";
 import { BackButton } from "../BackButton";
-import Navbar from "~/scenes/navbar";
-import { SelectedPage } from "~/shared/types";
 
 export type ChatMessage = {
   id: string;

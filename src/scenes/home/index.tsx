@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
-import useMediaQuery from "~/hooks/useMediaQuery";
 import ActionButton from "~/shared/ActionButton";
 import { SelectedPage } from "~/shared/types";
 import { motion } from "framer-motion";
@@ -12,8 +11,6 @@ type Props = {
 };
 
 const Home = ({ setSelectedPage }: Props) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-
   return (
     <section id="home" className="gap-16 bg-gray-50 py-10 md:h-screen md:pb-0">
       {/* IMAGE AND MAIN HEADER */}

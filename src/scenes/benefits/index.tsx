@@ -1,5 +1,5 @@
 import HText from "~/shared/HText";
-import { BenefitType, SelectedPage } from "~/shared/types";
+import { type BenefitType, SelectedPage } from "~/shared/types";
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
 import Link from "next/link";
