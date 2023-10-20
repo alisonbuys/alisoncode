@@ -2,7 +2,6 @@ import Image from "next/image";
 import { FaSignal } from "react-icons/fa";
 import { MdOutlineWifi } from "react-icons/md";
 import { BsBatteryFull } from "react-icons/bs";
-import { BackButton } from "../BackButton";
 
 export function OrderFoodPage() {
   return (

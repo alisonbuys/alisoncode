@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ReactNode } from "react";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
 
 export function BackButton() {
